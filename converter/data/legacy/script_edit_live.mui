@@ -1,0 +1,23 @@
+@include script_edit_key.mui
+
+_right-icon3-3
+    tex=ui-edit-icon31.png
+    tag=22
+_right-icon3-4
+    tex=ui-edit-icon13.png
+    tag=2
+_right-icon3-5
+    tex=ui-edit-icon21.png
+    tag=83
+_right-icon3-6
+    tex=ui-edit-icon20.png
+    tag=85
+    show=1
+_right-tip3-3
+    text=Tap
+_right-tip3-4
+    text=Hold
+_right-tip3-5
+    text=Remove
+_right-tip3-6
+    text=More

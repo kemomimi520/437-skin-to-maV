@@ -1,0 +1,267 @@
+{
+  "chart": "_song_39879/0/1779550173.mc",
+  "notes": 1759,
+  "holds": 725,
+  "runs": {
+    "r60-native-dense-kingfish-play-r2": {
+      "mean_fps": 1123.2206706223,
+      "p99_ms": 2.5002000000143,
+      "max_ms": 34.806899999992,
+      "above_8_33_ms": 21,
+      "above_16_67_ms": 5,
+      "final_accuracy": 99.985794067383,
+      "window_focus_at_play": true,
+      "native_player_finished": true,
+      "spikes": [
+        {
+          "ms": 14.147399999999,
+          "chart_time": 12975.882538887,
+          "frame": 30985,
+          "previous_frame": 30984,
+          "previous_chart_time": 12961.853242012
+        },
+        {
+          "ms": 11.417799999997,
+          "chart_time": 28180.738874204,
+          "frame": 47588,
+          "previous_frame": 47587,
+          "previous_chart_time": 28169.090436704
+        },
+        {
+          "ms": 12.4207,
+          "chart_time": 28254.576762421,
+          "frame": 47632,
+          "previous_frame": 47631,
+          "previous_chart_time": 28242.279887421
+        },
+        {
+          "ms": 8.6080000000024,
+          "chart_time": 30943.445125685,
+          "frame": 49570,
+          "previous_frame": 49569,
+          "previous_chart_time": 30934.929500685
+        },
+        {
+          "ms": 8.9859999999931,
+          "chart_time": 43278.074172869,
+          "frame": 63259,
+          "previous_frame": 63258,
+          "previous_chart_time": 43269.099677092
+        },
+        {
+          "ms": 10.023799999999,
+          "chart_time": 44808.862356311,
+          "frame": 64694,
+          "previous_frame": 64693,
+          "previous_chart_time": 44798.979543811
+        },
+        {
+          "ms": 34.806899999992,
+          "chart_time": 44869.725589064,
+          "frame": 64715,
+          "previous_frame": 64714,
+          "previous_chart_time": 44834.670901564
+        },
+        {
+          "ms": 13.48569999999,
+          "chart_time": 59345.342710458,
+          "frame": 79918,
+          "previous_frame": 79917,
+          "previous_chart_time": 59332.043014638
+        },
+        {
+          "ms": 14.977200000004,
+          "chart_time": 59392.217710458,
+          "frame": 79936,
+          "previous_frame": 79935,
+          "previous_chart_time": 59377.327085458
+        },
+        {
+          "ms": 11.53699999999,
+          "chart_time": 70819.500562753,
+          "frame": 89267,
+          "previous_frame": 89266,
+          "previous_chart_time": 70808.047990469
+        },
+        {
+          "ms": 31.241199999997,
+          "chart_time": 70872.024000253,
+          "frame": 89280,
+          "previous_frame": 89279,
+          "previous_chart_time": 70840.695875253
+        },
+        {
+          "ms": 11.947199999994,
+          "chart_time": 71483.262183897,
+          "frame": 89791,
+          "previous_frame": 89790,
+          "previous_chart_time": 71480.556434636
+        },
+        {
+          "ms": 10.679299999993,
+          "chart_time": 93009.517274391,
+          "frame": 117111,
+          "previous_frame": 117110,
+          "previous_chart_time": 92998.962586891
+        },
+        {
+          "ms": 14.157099999991,
+          "chart_time": 93070.129651361,
+          "frame": 117156,
+          "previous_frame": 117155,
+          "previous_chart_time": 93056.032082084
+        },
+        {
+          "ms": 13.564299999985,
+          "chart_time": 110857.41313386,
+          "frame": 138125,
+          "previous_frame": 138124,
+          "previous_chart_time": 110843.97563386
+        },
+        {
+          "ms": 14.047900000008,
+          "chart_time": 110900.9892459,
+          "frame": 138138,
+          "previous_frame": 138137,
+          "previous_chart_time": 110886.9658084
+        },
+        {
+          "ms": 17.941199999996,
+          "chart_time": 110920.5204959,
+          "frame": 138140,
+          "previous_frame": 138139,
+          "previous_chart_time": 110902.6767459
+        },
+        {
+          "ms": 13.940199999979,
+          "chart_time": 115214.58610227,
+          "frame": 141799,
+          "previous_frame": 141798,
+          "previous_chart_time": 115200.75016477
+        },
+        {
+          "ms": 9.0931000000012,
+          "chart_time": 122492.04728468,
+          "frame": 147527,
+          "previous_frame": 147526,
+          "previous_chart_time": 122483.03165968
+        },
+        {
+          "ms": 23.258400000003,
+          "chart_time": 122524.87540968,
+          "frame": 147536,
+          "previous_frame": 147535,
+          "previous_chart_time": 122501.46915968
+        },
+        {
+          "ms": 16.913799999998,
+          "chart_time": 122541.84415968,
+          "frame": 147537,
+          "previous_frame": 147536,
+          "previous_chart_time": 122524.87540968
+        }
+      ],
+      "native_skin_lua_errors": [],
+      "native_scene_pipeline_checks_pass": null
+    },
+    "r60-native-dense-circle-play-r1": {
+      "mean_fps": 914.63642472985,
+      "p99_ms": 3.8453000000018,
+      "max_ms": 16.996800000001,
+      "above_8_33_ms": 12,
+      "above_16_67_ms": 1,
+      "final_accuracy": 100.0,
+      "window_focus_at_play": false,
+      "native_player_finished": true,
+      "spikes": [
+        {
+          "frame": 13904,
+          "chart_time": 510.05574927719,
+          "ms": 9.7661999999978,
+          "previous_chart_time": 506.12508521469,
+          "previous_frame": 13903
+        },
+        {
+          "frame": 15142,
+          "chart_time": 2860.6667960708,
+          "ms": 9.3828000000009,
+          "previous_chart_time": 2853.4050773208,
+          "previous_frame": 15141
+        },
+        {
+          "frame": 48942,
+          "chart_time": 38995.819874602,
+          "ms": 8.9418000000023,
+          "previous_chart_time": 38987.042530852,
+          "previous_frame": 48941
+        },
+        {
+          "frame": 76504,
+          "chart_time": 67436.68712835,
+          "ms": 9.5562000000058,
+          "previous_chart_time": 67428.10119085,
+          "previous_frame": 76503
+        },
+        {
+          "frame": 76508,
+          "chart_time": 67464.477797795,
+          "ms": 10.176799999996,
+          "previous_chart_time": 67456.829360295,
+          "previous_frame": 76507
+        },
+        {
+          "frame": 76510,
+          "chart_time": 67478.563735295,
+          "ms": 8.5042000000044,
+          "previous_chart_time": 67470.844985295,
+          "previous_frame": 76509
+        },
+        {
+          "frame": 76541,
+          "chart_time": 67586.92232764,
+          "ms": 9.077199999993,
+          "previous_chart_time": 67579.50826514,
+          "previous_frame": 76540
+        },
+        {
+          "frame": 76627,
+          "chart_time": 67861.482687537,
+          "ms": 16.996800000001,
+          "previous_chart_time": 67844.607687537,
+          "previous_frame": 76626
+        },
+        {
+          "frame": 77395,
+          "chart_time": 69357.661469167,
+          "ms": 8.6054999999874,
+          "previous_chart_time": 69349.411469167,
+          "previous_frame": 77394
+        },
+        {
+          "frame": 103362,
+          "chart_time": 100899.131417,
+          "ms": 8.8158999999877,
+          "previous_chart_time": 100891.22299644,
+          "previous_frame": 103361
+        },
+        {
+          "frame": 114731,
+          "chart_time": 115169.53944975,
+          "ms": 13.893499999995,
+          "previous_chart_time": 115155.4110906,
+          "previous_frame": 114730
+        },
+        {
+          "frame": 135420,
+          "chart_time": 136022.51159187,
+          "ms": 8.8481999999885,
+          "previous_chart_time": 136017.04284187,
+          "previous_frame": 135419
+        }
+      ],
+      "native_skin_lua_errors": [],
+      "native_scene_pipeline_checks_pass": null
+    }
+  },
+  "full_acceptance": false
+}

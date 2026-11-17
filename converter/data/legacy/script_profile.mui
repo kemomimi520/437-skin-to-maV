@@ -1,0 +1,329 @@
+@include script_sub_head.mui
+@unit 1080
+
+@define list_x 625
+@define list_x2 312
+@if <1.4
+@define list_x 530
+@define list_x2 265
+@endif
+
+_head-t
+    lang=916
+_head-back
+    etag=108
+    tag=5
+_head-btn-[1-6]
+    tex=icon-sort.png
+    size=0,69
+    anchor=4
+    etag=108
+    parent=_head
+    pos=100%-50-{ipx}$-78-{icon_p},50%+8
+    zindex=2
+    show=0
+_head-btn-1
+    tex=icon-out.png
+    tag=4
+_head-btn-2
+    tag=6
+_head-btn-3
+    tex=icon-fri.png
+    parent=_head
+    pos=100%-50-{ipx},50%+8
+    tag=8
+_head-btn-4
+    tex=ui-prof-chat1.png
+    anchor=3
+    parent=_head
+    pos=98+{icon_p}+{ipx},50%+8
+    show=1
+    tag=10
+_head-btn-[5,6]
+    tex=icon-submit.png
+    anchor=3
+    parent=_head
+    pos=98+{icon_p}+{ipx}$78+{icon_p},50%+8
+    show=0
+    tag=11$1
+_head-btn-6
+    tex=icon-review.png
+# frame
+_bar-2
+    tex=ui-line1.png
+    anchor=0
+    pos=62,100%-109
+    size=94,100%-109-36
+_bar-3
+    type=4
+    type2=2
+    tex=ui-line0.png
+    part=40,144
+    anchor=3
+    pos=62+94,36
+    size=100%-62-94-87,8
+_avabg
+    tex=ui-prof-avatar.png
+    size=272,0
+    anchor=4
+    pos=320,100%-263
+_avatar
+    type=102
+    size2=212,212
+    tex=g-avatar-l.png
+    anchor=4
+    pos=_avabg 0,0
+    zindex=1
+_icon-online
+    tex=g-online.png
+    size=46,46
+    anchor=4
+    pos=_avabg 80,-73
+    zindex=2
+_username
+    type=1
+    fsize={f1}
+    anchor=4
+    pos=_avabg 0,-196
+_gender
+    tex=icon-gender0.png
+    size=0,36
+    anchor=3
+    pos=_username -117,-60
+_countryi
+    tex=flag-7.png
+    size=0,28
+    anchor=3
+    pos=_gender 50,0
+    show=0
+_country
+    type=1
+    lang=4000
+    fsize={f3}
+    anchor=3
+    pos=_countryi 50,0
+_gold-icon
+    tex=g-gold.png
+    size=0,36
+    anchor=3
+    pos=_username -117,-112
+_gold
+    type=1
+    fsize={f1}
+    anchor=3
+    pos=_gold-icon 60,0
+_button-[1-4]
+    type=4
+    tex=g-dialogbtn.png
+    part=8,44
+    size=244,66
+    anchor=3
+    pos=_gold-icon 0,-100$-90.5
+    etag=108
+_button-1
+    tag=7
+_button-2
+    tag=2
+_button-3
+    tag=3
+_button-4
+    tag=1
+    show=0
+_buttonstr-[1-4]
+    type=1
+    fsize={f2}
+    anchor=4
+    pos=122,33
+_buttonstr-1
+    lang=114
+    parent=_button-1
+_buttonstr-2
+    lang=805
+    parent=_button-2
+_buttonstr-3
+    lang=806
+    parent=_button-3
+_buttonstr-4
+    lang=803
+    parent=_button-4
+_list-[1-4]
+    type=101
+    size=100%-{list_x}-86,820
+    anchor=6
+    pos={list_x},68
+    show=0
+_list-4
+    tex=g-empty.png
+    size3=0,100
+_scroll
+    tex=g-scroll.png
+    size=2,820
+    anchor=8
+    pos=100%-40,68
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
++item1
+_item1-bg
+    type=4
+    tex=ui-prof-item.png
+    part=16,222
+    size=100%-{list_x}-86,118
+    anchor=6
+    pos=0,230
+_item1-icon
+    tex=mode0.png
+    size=0,92
+    anchor=4
+    parent=_item1-bg
+    pos=61,50%
+    tag=10
+_item1t-[1-5]
+    type=1
+    anchor=0
+    fsize={f3}
+_item1t-1
+    pos=126,102
+    text=RANK
+    parent=_item1-bg
+_item1t-2
+    parent=_item1-bg
+    pos=37.3%,102
+    text=LEVEL
+_item1t-3
+    parent=_item1-bg
+    pos=50.2%,102
+    text=PLAYED
+_item1t-4
+    parent=_item1-bg
+    pos=65.2%,102
+    text=AVG.ACC.
+_item1t-5
+    parent=_item1-bg
+    pos=81.2%,102
+    text=MAX COMBO
+_item1v-[1-5]
+    type=1
+    anchor=6
+    fsize={f2}
+    parent=_item1-bg
+    text=000
+    tag=1$1
+_item1v-1
+    pos=_item1t-1 0,-88
+_item1v-2
+    pos=_item1t-2 0,-88
+_item1v-3
+    pos=_item1t-3 0,-88
+_item1v-4
+    pos=_item1t-4 0,-88
+_item1v-5
+    pos=_item1t-5 0,-88
++item2
+_item2-bg
+    type=4
+    tex=ui-prof-item.png
+    part=16,222
+    size=100%-{list_x}-86,118
+_item2-icon
+    type=102
+    size2=92,92
+    anchor=4
+    parent=_item2-bg
+    pos=61,50%
+    tag=1
+_item2-title
+    type=1
+    fsize={f2}
+    anchor=6
+    pos=126,60
+    parent=_item2-bg
+    tag=2
+_item2-desc
+    type=1
+    fsize={f3}
+    parent=_item2-bg
+    size2=100%-100-180,0
+    anchor=6
+    pos=126,25
+    tag=3
+_item2-time
+    type=1
+    fsize={f3}
+    color=#959595
+    anchor=8
+    parent=_item2-bg
+    pos=100%-30,18
+    tag=4
+    show=0
++item3
+_item3-bg
+    type=4
+    tex=ui-prof-item.png
+    part=16,222
+    size=50%-{list_x2}-60,118
+    anchor=6
+_item3-ava
+    type=102
+    type2=1
+    size2=92,92
+    tex=g-avatar.png
+    anchor=4
+    parent=_item3-bg
+    pos=61,50%
+    tag=1
+_item3-title
+    type=1
+    fsize={f2}
+    size2=350,0
+    anchor=6
+    pos=126,60
+    parent=_item3-bg
+    tag=2
+_item3-desc
+    type=1
+    fsize={f3}
+    parent=_item3-bg
+    anchor=6
+    pos=126,20
+    tag=3
+_item3-icon
+    tex=ui-prof-chat.png
+    size=0,40
+    anchor=4
+    parent=_item3-bg
+    pos=100%-60,55
+    tag=9
+    etag=108
+
+@if phone
+_head-btn-1
+    tex=icon-out0.png
+_head-btn-2
+    tex=icon-sort0.png
+_head-btn-3
+    tex=icon-fri0.png
+_head-btn-4
+    tex=ui-prof-chat.png
+_head-btn-5
+    tex=icon-submit0.png
+_head-btn-6
+    tex=icon-review0.png
+_item1v-1
+    pos=_item1t-1 0,-98
+_item1v-2
+    pos=_item1t-2 0,-98
+_item1v-3
+    pos=_item1t-3 0,-98
+_item1v-4
+    pos=_item1t-4 0,-98
+_item1v-5
+    pos=_item1t-5 0,-98
+_item3-icon
+    show=0
+_item3-desc
+    pos=126,13
+@endif

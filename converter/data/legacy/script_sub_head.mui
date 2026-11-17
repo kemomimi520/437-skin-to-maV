@@ -1,0 +1,50 @@
+@unit 1080
+
+@define ipx 0
+@define icon_p 0
+@define f1 40
+@define f2 32
+@define f3 24
+@if phonex
+@define ipx 55
+@endif
+
+@if phone
+@define icon_p 25
+@define f1 50
+@define f2 45
+@define f3 30
+@endif
+
+@if phone 
+@unit 960
+@endif
+
+_head
+    type=4
+    type2=2
+    tex=g-head.png
+    part=24px,472px
+    size=100%,133
+    anchor=0
+    pos=0,100%
+    zindex=10
+    fix=1
+_head-t
+    type=1
+    lang=910
+    fsize=50
+    anchor=4
+    parent=_head
+    pos=50%,50%
+    zindex=10
+_head-back
+    tex=icon-back.png
+@if phone
+    tex=icon-back0.png
+@endif
+    size=0,69
+    anchor=4
+    parent=_head
+    pos=47+{ipx},50%+8
+    zindex=2

@@ -1,0 +1,55 @@
+_layer-[0,1,2]
+    size=100%,100%
+    show=0
+_bg-[1-5]
+    tex=song-sc-bg.png
+    size=200,266
+    anchor=4
+    etag=110
+    tag=1$1
+
+_bg-[1-3]
+    parent=_layer-0
+    pos=50%-200$200,50%
+_bg-[4,5]
+    parent=_layer-1
+    pos=50%-100$200,50%
+_bg-[6,7]
+    tex=song-sc-bg.png
+    size=200,266
+    anchor=4
+    etag=110
+    tag=2$1
+    pos=50%-100$200,50%
+    parent=_layer-2
+_icon-[1-7]
+    tex=song-sc-icon0.png
+    size=130,0
+    anchor=4
+_icon-1
+    parent=_bg-1
+    pos=50%,50%
+_icon-2
+    tex=song-sc-icon1.png
+    parent=_bg-2
+    pos=50%,50%
+_icon-3
+    tex=song-sc-icon2.png
+    parent=_bg-3
+    pos=50%,50%
+_icon-4
+    tex=song-sc-icon3.png
+    parent=_bg-4
+    pos=50%,50%
+_icon-5
+    tex=song-sc-icon2.png
+    parent=_bg-5
+    pos=50%,50%
+_icon-6
+    tex=song-sc-icon1.png
+    parent=_bg-6
+    pos=50%,50%
+_icon-7
+    tex=song-sc-icon2.png
+    parent=_bg-7
+    pos=50%,50%

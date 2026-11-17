@@ -1,0 +1,69 @@
+@include script_edit_config.mui
+@include script_edit_pc.mui
+
+
+_right-icon3-2
+    tex=ui-edit-icon16.png
+    tag=1
+_right-icon3-3
+    tex=ui-edit-icon17.png
+    tag=2
+_right-icon3-4
+    tex=ui-edit-icon21.png
+    tag=83
+_right-icon3-5
+    tex=ui-edit-icon20.png
+    tag=85
+_right-icon3-[2-5]
+    show=1
+_right-tip3-2
+    text=Note
+_right-tip3-3
+    text=Hold
+_right-tip3-4
+    text=Remove
+_right-tip3-5
+    text=More
+_right-tip3-[2-5]
+    show=1
+_edit
+    size=100%,100%
+    anchor=6
+    pos=0,0
+    zindex=1
+    etag=105
+
+_cell-[1-16]
+    type=5
+    tex=ui-edit-bg3.png
+    rect=8px,8px,48px,48px
+    size=164,164
+    anchor=4
+    parent=_edit
+_cell-[1-4]
+    pos=360$180,100%-90
+_cell-[5-8]
+    pos=360$180,75%-90
+_cell-[9-12]
+    pos=360$180,50%-90
+_cell-[13-16]
+    pos=360$180,25%-90
+
+_markerdef
+    tex=pad-marker-5-20.png
+    anchor=4
+    pos=_cell-1 0,0
+    size=164,164
+    parent=_edit
+    zindex=2
+
+@if <1.44
+_cell-[1-4]
+    pos=320$170,100%-90
+_cell-[5-8]
+    pos=320$170,75%-90
+_cell-[9-12]
+    pos=320$170,50%-90
+_cell-[13-16]
+    pos=320$170,25%-90
+@endif

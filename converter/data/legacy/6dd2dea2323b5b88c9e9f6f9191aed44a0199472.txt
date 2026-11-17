@@ -1,0 +1,188 @@
+:ani-press-1
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%-415.7,367.8),to=(50%-450,540),atime=(-2000,-1100)
+:ani-press-2
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%-318.2,221.8),to=(50%-415.7,367.8),atime=(-2000,-1100)
+:ani-press-3
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%-172.2,124.3),to=(50%-318.2,221.8),atime=(-2000,-1100)
+:ani-press-4
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%,90),to=(50%-172.2,124.3),atime=(-2000,-1100)
+:ani-press-5
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%+172.2,124.3),to=(50%,90),atime=(-2000,-1100)
+:ani-press-6
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%+318.2,221.8),to=(50%+172.2,124.3),atime=(-2000,-1100)
+:ani-press-7
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%+415.7,367.8),to=(50%+318.2,221.8),atime=(-2000,-1100)
+:ani-press-8
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%+450,540),to=(50%+415.7,367.8),atime=(-2000,-1100)
+:ani-press-9
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=360,atime=(-1700,-1100)
+    name=m,from=(50%+315,540),to=(50%+450,540),atime=(-2000,-1100)
+:rotb
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=size,from=(256,256),to=(281,281),atime=(-2000,-1800),repeat=(999999,200)
+    name=size,from=(281,281),to=(256,256),atime=(-1800,-1600),repeat=(999999,200)
+hit-[1-9]
+    motion=rotb
+    size=300,300
+hit-1
+    pos=50%-450,540
+hit-2
+    pos=50%-415.7,367.8
+hit-3
+	   pos=50%-318.2,221.8
+hit-4
+	   pos=50%-172.2,124.3
+hit-5
+	   pos=50%,90
+hit-6
+	   pos=50%+172.2,124.3
+hit-7
+	   pos=50%+318.2,221.8
+hit-8
+	   pos=50%+415.7,367.8
+hit-9
+    	pos=50%+450,540
+press-[1-9]
+    motion=press-a
+    size=240,240
+press-1
+    pos=hit-1 0,0
+press-2
+    pos=hit-2 0,0
+press-3
+    pos=hit-3 0,0
+press-4
+    pos=hit-4 0,0
+press-5
+    pos=hit-5 0,0
+press-6
+    pos=hit-6 0,0
+press-7
+    pos=hit-7 0,0
+press-8
+    pos=hit-8 0,0
+press-9
+    pos=hit-9 0,0
+_press-[1-9]
+    size=200,200
+_press-1
+    motion=ani-press-1
+    pos=hit-1 0,0
+_press-2
+    motion=ani-press-2
+    pos=hit-2 0,0
+_press-3
+    motion=ani-press-3
+    pos=hit-3 0,0
+_press-4
+    motion=ani-press-4
+    pos=hit-4 0,0
+_press-5
+    motion=ani-press-5
+    pos=hit-5 0,0
+_press-6
+    motion=ani-press-6
+    pos=hit-6 0,0
+_press-7
+    motion=ani-press-7
+    pos=hit-7 0,0
+_press-8
+    motion=ani-press-8
+    pos=hit-8 0,0
+_press-9
+    motion=ani-press-9
+    pos=hit-9 0,0
+_pre-[1-9]
+    motion=rotc
+    size=160,160
+_pre-1
+    pos=hit-1 0,0
+_pre-2
+    pos=hit-2 0,0
+_pre-3
+    pos=hit-3 0,0
+_pre-4
+    pos=hit-4 0,0
+_pre-5
+    pos=hit-5 0,0
+_pre-6
+    pos=hit-6 0,0
+_pre-7
+    pos=hit-7 0,0
+_pre-8
+    pos=hit-8 0,0
+_pre-9
+    pos=hit-9 0,0
+note-[1-9]
+    size=50,50
+    size2=180,180
+    pos=50%,540
+note-1
+    pos2=press-1 0,0
+note-2
+    pos2=press-2 0,0
+note-3
+    pos2=press-3 0,0
+note-4
+    pos2=press-4 0,0
+note-5
+    pos2=press-5 0,0
+note-6
+    pos2=press-6 0,0
+note-7
+    pos2=press-7 0,0
+note-8
+    pos2=press-8 0,0
+note-9
+    pos2=press-9 0,0
+_cover-[1-3]
+    motion=rota2
+    size=58,58
+    pos=50%,540
+_cover-2
+    size=72,72
+    motion=rota
+_cover-3
+    size=86,86
+    motion=rota3
+judge-1
+    size=240,80
+    pos=50%,320
+hit-fast
+    size=66,82
+    pos=50%-127,323
+hit-slow
+    size=66,82
+    pos=50%+127,323
+score-combo
+    fsize=50
+    pos=50%,380
+    pos2=0.9px,0
+touch
+    type=3
+    array=50%,540,50%-540,647.4,50%-540,432.3
+    array2=50%,540,50%-540,432.3,50%-457.8,234.1
+    array3=50%,540,50%-457.8,234.1,50%-305.9,82.2
+    array4=50%,540,50%-305.9,82.2,50%-107.4,0
+    array5=50%,540,50%-107.4,0,50%+107.4,0
+    array6=50%,540,50%+107.4,0,50%+305.9,82.2
+    array7=50%,540,50%+305.9,82.2,50%+457.8,234.1
+    array8=50%,540,50%+457.8,234.1,50%+540,432.3
+    array9=50%,540,50%+540,432.3,50%+540,647.4

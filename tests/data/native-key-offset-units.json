@@ -1,0 +1,80 @@
+{
+  "binary_sha256": "f554af9b371f7cd3629ee1e257b76fba41b3899fa6f2c33f2c6e121b17b8021f",
+  "original_update": "0x18036c3a0",
+  "original_dynamic_update": "0x18036cf60",
+  "mapper_returns": "parent-coordinate offset distance, not normalized anchor",
+  "range_write": "SetOffsetY",
+  "instructions": [
+    {
+      "role": "ordinary_head_distance",
+      "va": "0x18036c4fd",
+      "hex": "e86eb0fbff",
+      "callee": "GetNoteDistanceFromDeltaY",
+      "target": "0x180327570"
+    },
+    {
+      "role": "ordinary_tail_distance",
+      "va": "0x18036c517",
+      "hex": "e854b0fbff",
+      "callee": "GetNoteDistanceFromDeltaY",
+      "target": "0x180327570"
+    },
+    {
+      "role": "ordinary_range_write",
+      "va": "0x18036c540",
+      "hex": "e87bc01801",
+      "callee": "SetOffsetY",
+      "target": "0x1814f85c0"
+    },
+    {
+      "role": "dynamic_head_distance",
+      "va": "0x18036d188",
+      "hex": "e8e3a3fbff",
+      "callee": "GetNoteDistanceFromDeltaY",
+      "target": "0x180327570"
+    },
+    {
+      "role": "dynamic_tail_distance",
+      "va": "0x18036d1a7",
+      "hex": "e8c4a3fbff",
+      "callee": "GetNoteDistanceFromDeltaY",
+      "target": "0x180327570"
+    },
+    {
+      "role": "dynamic_range_write",
+      "va": "0x18036d1d0",
+      "hex": "e8ebb31801",
+      "callee": "SetOffsetY",
+      "target": "0x1814f85c0"
+    },
+    {
+      "role": "range_read_offset_min",
+      "va": "0x1814f85e0",
+      "hex": "e82bbaad00",
+      "callee": "get_offsetMin",
+      "target": "0x181fd4010"
+    },
+    {
+      "role": "range_write_offset_min",
+      "va": "0x1814f85fe",
+      "hex": "e82dc2ad00",
+      "callee": "set_offsetMin",
+      "target": "0x181fd4830"
+    },
+    {
+      "role": "range_read_offset_max",
+      "va": "0x1814f8608",
+      "hex": "e8e3b8ad00",
+      "callee": "get_offsetMax",
+      "target": "0x181fd3ef0"
+    },
+    {
+      "role": "range_write_offset_max",
+      "va": "0x1814f8635",
+      "hex": "e9a6bfad00",
+      "callee": "set_offsetMax",
+      "target": "0x181fd45e0"
+    }
+  ],
+  "scope": "installed binary call operands; source motion equivalence and complete skin acceptance are separate"
+}

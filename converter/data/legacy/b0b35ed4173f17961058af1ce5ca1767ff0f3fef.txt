@@ -1,0 +1,46 @@
+@unit 1080
+
+_btn-add
+    pos=673,100%-187
+_btn-addi
+    pos=_btn-add -100,0
+_item1-bg
+    size=627,116
+_item1-title
+    size2=280,0
+_item1-mod
+    parent=_item1
+    pos=100%-90,50%
+_item1-status
+    parent=_item1
+    pos=100%-40,50%
+
+_room-join
+    size=223,68
+_room-jointext
+    pos=112.5,34
+_room-status-4
+    pos=310,582
+_room-song-cover
+    pos=310,780
+_room-songstr-[1-3]
+    size2=270,0
+    pos=_room-song-cover 140,0
+_room-songstr-2
+    pos=_room-songstr-1 0,-33
+_room-songstr-3
+    pos=_room-songstr-1 0,-91
+_playerlist
+    size=360,524
+    pos=310,42
+_scroll-2
+    pos=676,42
+_item2
+    size=310,65
+_item2-name
+    size2=220,0
+
+_room-title
+    size2=300,0
+_room-host-name
+    size2=230,0

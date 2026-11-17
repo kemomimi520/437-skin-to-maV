@@ -1,0 +1,221 @@
+@unit 1080
+@include script_sub_head.mui
+
+@define list_x 800
+@define list_h 700
+@define left_x 89
+@define mod_x 200
+@define item_y 116
+
+@if phone
+@define left_x 49
+@define list_h 620
+@define mod_x 266
+@define item_y 160
+@endif
+
+@if <1.44
+@define list_x 600
+@define left_x 49
+@endif
+
+@define right_x {list_x}+{left_x}+{left_x}+60
+
+_head-t
+    lang=913
+_head-back
+    etag=123
+    tag=1
+_list
+    type=101
+    size={list_x},{list_h}
+    anchor=6
+    pos={left_x},194
+listholder
+    type=200
+    type2=4
+    size={list_x},{mod_x}
+_scroll
+    tex=g-scroll.png
+    size=2,{list_h}
+    anchor=7
+    pos={left_x}+{list_x}+30,194
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
+_label
+    type=1
+    fsize={f3}
+    lang=130
+    anchor=6
+    pos=111,128
+_speedbar
+    type=106
+    tex=ui-mod-bar.png
+    size=484,47
+    anchor=0
+    pos=111,125
+    parent=_item
+    zindex=3
+_speedbar-bg
+    type=4
+    tex=ui-mod-bg.png
+    part=20,100
+    size=_speedbar 0,0
+    anchor=0
+    pos=_speedbar 0,0
+    zindex=4
+    etag=123
+    tag=2
+_speedstr
+    type=1
+    fsize={f1}
+    anchor=4
+    pos=353,97
+    zindex=5
+_button
+    type=4
+    tex=g-dialogbtn.png
+    tex2=g-dialogbtn2.png
+    part=7,46
+    size=263,68
+    anchor=5
+    pos=100%-{left_x},100
+    hover=g-dialogbtn2.png
+    leave=g-dialogbtn.png
+    etag=123
+    tag=3
+_buttonstr
+    type=1
+    fsize={f2}
+    anchor=4
+    text=RESET
+    parent=_button
+    pos=50%,50%
+_right
+    size=100%-{right_x},{list_h}
+    anchor=8
+    pos=100%-{left_x},194
+_rightbg
+    type=5
+    tex=g-rightbg.png
+    rect=20px,144px,40px,80px
+    size=_right 0,0
+    size2=0,1080px
+    anchor=6
+    parent=_right
+_mask
+    tex=ui-mod-on.png
+    size=240,0
+    anchor=4
+    parent=_right
+    pos=50%,458
+    zindex=4
+_mod
+    tex=mod0.png
+    size=0,80
+    anchor=4
+    pos=_mask 0,0
+    zindex=3
+    parent=_right
+_mod-desc
+    type=1
+    fsize={f2}
+    anchor=4
+    size2={right_x}-60,0
+    parent=_right
+    pos=50%,310
+_mod-desc2
+    type=1
+    fsize={f3}
+    anchor=4
+    size2={right_x}-60,0
+    parent=_right
+    pos=50%,200
+_line0
+    tex=ui-mod-line0.png
+    size=0,30
+    anchor=2
+    parent=_right
+    pos=_mod -93,0
+    zindex=2
+_line1
+    tex=ui-mod-line1.png
+    size=0,2
+    anchor=0
+    parent=_right
+    pos=_mod 94,0
+    zindex=2
+_line2
+    tex=ui-mod-line2.png
+    size=0,31
+    anchor=6
+    parent=_right
+    pos=_mod 55,74
+    zindex=2
++item
+_item
+    size={mod_x},{mod_x}
+_item-bg
+    tex=ui-mod-black.png
+    size=0,102
+    anchor=4
+    parent=_item
+    pos=50%,{item_y}
+    zindex=1
+_item-mask
+    tex=ui-mod-off.png
+    size=160,0
+    anchor=4
+    parent=_item
+    pos=_item-bg 0,0
+    zindex=3
+    tag=2
+_item-mod
+    tex=mod0.png
+    size=0,60
+    anchor=4
+    pos=_item-bg 0,0
+    zindex=2
+    parent=_item
+    tag=1
+_item-name
+    type=1
+    fsize={f3}
+    anchor=7
+    parent=_item
+    pos=50%,10
+    tag=3
+
+@if phone
+listholder
+    type2=3
+_button
+    size=364,100
+_buttonstr
+    parent=_button
+    pos=50%,50%
+_speedbar
+    size=677,65
+_speedbar-bg
+    size=_speedbar 0,0
+_speedstr
+    pos=455,92
+_item-bg
+    size=0,160
+_item-mask
+    size=250,0
+_item-mod
+    size=0,90
+_item-name
+    parent=_item
+    pos=50%,10
+@endif
+
+@if <1.44
+listholder
+    type2=3
+@endif

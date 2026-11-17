@@ -1,0 +1,13 @@
+
+#ifdef GL_ES
+precision lowp float;
+#endif
+
+varying vec4 v_fragmentColor;
+varying vec4 v_texCoord;
+
+void main()
+{
+    gl_FragColor = v_fragmentColor * texture2DProj(CC_Texture0, v_texCoord);
+}
+

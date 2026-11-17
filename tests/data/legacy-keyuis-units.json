@@ -1,0 +1,36 @@
+{
+  "legacy_binary_sha256": "d0cf9ecb493f3fdbd1e3ce48cbfad06ef816d19931ab0c51d9e9655f5eb63ce3",
+  "legacy_constants": {
+    "move_window": {
+      "va": "0x7cc438",
+      "format": "d",
+      "hex": "0000000000c48340",
+      "value": 632.5
+    },
+    "mui_size_divisor": {
+      "va": "0x7cc5a8",
+      "format": "f",
+      "hex": "00003444",
+      "value": 720.0
+    },
+    "retirement_distance": {
+      "va": "0x7cc460",
+      "format": "d",
+      "hex": "0000000000408f40",
+      "value": 1000.0
+    }
+  },
+  "source_methods": {
+    "layer_init": "0x59b220",
+    "visible_size": "0x6b8d30",
+    "context_ctor": "0x50aff0",
+    "key_update": "0x5ac1b0"
+  },
+  "native_distance_clamp": {
+    "binary_sha256": "f554af9b371f7cd3629ee1e257b76fba41b3899fa6f2c33f2c6e121b17b8021f",
+    "va": "0x180327612",
+    "hex": "f30f5d4b78",
+    "instruction": "minss xmm1, dword ptr [rbx + 0x78]"
+  },
+  "scope": "read-only installed binary constants and instructions; not rendered height or complete skin acceptance"
+}

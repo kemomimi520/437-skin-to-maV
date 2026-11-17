@@ -1,0 +1,56 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+varying vec4 v_fragmentColor;
+varying vec2 v_texCoord;
+
+uniform vec2 resolution;
+uniform vec2 offset;
+uniform vec2 content;
+uniform float r;
+
+void main(void)
+{
+	vec2 _xy = v_texCoord.xy * resolution.xy;
+	_xy -= offset;
+
+	if(_xy.x < 0.0 || _xy.x > content.x || _xy.y < 0.0 || _xy.y > content.y){
+		discard;
+	}
+	if((_xy.x >= r && _xy.x <= content.x - r) || (_xy.y >= r && _xy.y <= content.y - r)){
+        gl_FragColor = texture2D(CC_Texture0, v_texCoord);
+        return;
+    }
+
+	//left top
+	vec2 r0;
+    if(_xy.x < r && _xy.y < r){
+		r0 = vec2(r, r);
+		float _r = distance(r0, _xy);
+        if(_r > r){
+            discard;
+        }
+    }else if(_xy.x > r && _xy.y < r){
+		r0 = vec2(content.x - r, r);
+		float _r = distance(r0, _xy);
+        if(_r > r){
+            discard;
+        }
+    }else if(_xy.x > r && _xy.y > r){
+		r0 = vec2(content.x - r, content.y - r);
+		float _r = distance(r0, _xy);
+        if(_r > r){
+            discard;
+        }
+    }else{
+		r0 = vec2(r, content.y - r);
+		float _r = distance(r0, _xy);
+        if(_r > r){
+            discard;
+        }
+
+    }
+
+	gl_FragColor = texture2D(CC_Texture0, v_texCoord);
+}

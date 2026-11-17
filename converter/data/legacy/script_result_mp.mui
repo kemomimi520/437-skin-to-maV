@@ -1,0 +1,187 @@
+@include script_result.mui
+@unit 1080
+
+@define leftw -100
+@if phone
+@define leftw -50
+@endif
+
+_btn-[2-4]
+    show=0
+_score-6
+    lang=726
+_userlv
+    show=0
+
+_left
+    size=250,81
+    anchor=6
+    pos=0,370
+    zindex=10
+    etag=124
+    tag=9
+_left-bg
+    type=4
+    tex=ui-chart-bg3.png
+    tex2=ui-chart-bg4.png
+    leave=ui-chart-bg3.png
+    hover=ui-chart-bg4.png
+    part=20,60
+    size=300,81
+    anchor=6
+    pos={leftw},0
+    parent=_left
+_left-ava
+    type=102
+    tex=g-avatar.png
+    size2=62,62
+    type2=1
+    anchor=4
+    parent=_left
+    pos=50,40.5
+    tag=2
+_left-str
+    type=1
+    fsize={f2}
+    text=0/0
+    anchor=3
+    pos=100,40.5
+    parent=_left
+    zindex=3
+
+_team
+    size=_left 0,0
+    anchor=6
+    pos=0,460
+    zindex=10
+    show=0
+_teambg
+    type=4
+    tex=ui-chart-bg3.png
+    part=20,60
+    size=300,81
+    anchor=6
+    pos={leftw},0
+    parent=_team
+_team-flag
+    tex=ui-play-flag0.png
+    anchor=4
+    size=0,44
+    pos=53,40
+    parent=_team
+_team-text
+    type=1
+    fsize={f2}
+    text=+10.89%
+    anchor=3
+    pos=90,40
+    parent=_team
+
+_popup
+    size=100%,100%
+    anchor=6
+    zindex=100
+    show=0
+    etag=124
+    tag=10
+_popup-mask
+    type=2
+    color=#000000
+    opacity=20
+    size=100%,100%
+    anchor=6
+    parent=_popup
+_popup-bg
+    type=5
+    tex=g-rightbg.png
+    rect=20px,144px,40px,80px
+    size2=0,1080px
+    size=540,820
+    anchor=4
+    pos=50%-5,50%
+    parent=_popup
+    zindex=1
+_popup-list
+    type=101
+    size=500,800
+    anchor=4
+    pos=50%,50%
+    parent=_popup
+    zindex=2
+_scroll-2
+    tex=g-scroll.png
+    size=2,800
+    anchor=5
+    pos=50%+255,50%
+    parent=_popup
+    zindex=3
+_scrollbar-2
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll-2
+    pos=2,0
++item3
+_item3
+    size=500,81+28
+_item3-bg
+    type=4
+    tex=ui-chart-bg3.png
+    tex2=ui-chart-bg4.png
+    leave=ui-chart-bg3.png
+    hover=ui-chart-bg4.png
+    part=20,60
+    size=500,81
+    anchor=6
+    pos=0,28
+    parent=_item3
+_item3-num
+    type=1
+    fsize={f2}
+    anchor=4
+    parent=_item3
+    pos=48,40.5+28
+    tag=1
+    zindex=5
+_item3-avatar
+    type=102
+    tex=g-avatar.png
+    size2=62,62
+    type2=1
+    anchor=4
+    parent=_item3
+    pos=120,40.5+28
+    tag=2
+    zindex=5
+_item3-name
+    type=1
+    fsize={f3}
+    size2=200,0
+    anchor=6
+    parent=_item3
+    pos=162,44+28
+    tag=3
+    zindex=5
+_item3-sub
+    type=1
+    fsize={f3}
+    anchor=6
+    parent=_item3
+    pos=162,7+28
+    color=#999999
+    tag=4
+    zindex=5
+_item3-levelbg
+    tex=ui-chart-level.png
+    size=0,63
+    anchor=4
+    parent=_item3
+    pos=100%-37,40.5+28
+    tag=5
+_item3-level
+    tex=icon-rank0.png
+    size=0,30
+    anchor=4
+    pos=_item3-levelbg 0,0
+    parent=_item3
+    tag=6

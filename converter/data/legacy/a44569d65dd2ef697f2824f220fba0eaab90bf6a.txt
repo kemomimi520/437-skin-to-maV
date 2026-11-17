@@ -1,0 +1,10 @@
+@unit 1080
+
+_fixed
+    size=459,0
+    pos=350,635
+_bg-[0-4]
+    size=459,0
+    pos=_fixed 0,0
+_bg-0
+    size=111,0

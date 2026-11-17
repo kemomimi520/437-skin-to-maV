@@ -1,0 +1,142 @@
+# intro animation for taiko
+
+_intro
+    type=1
+    text=How to play taiko
+    fsize=30
+    anchor=4
+    pos=50%,690
+_track
+    tex=taiko-trackdrum.png
+    size=0,150
+    anchor=3
+    pos=50%-480,600
+    zindex=10
+_trackbg
+    tex=taiko-track.png
+    size=900,150
+    anchor=5
+    pos=50%+480,600
+_center
+    tex=taiko-track-judge.png
+    size=0,150
+    anchor=4
+    pos=50%-220,600
+_drum-[1-2]
+    tex=taiko-keybind-drum.png
+    size=200,400
+    anchor=5
+    pos=50%,300
+_drum-2
+	anchor=3
+	flip=0
+#animation
+
+:note-1
+    name=fade,to=255,time=(500,+100)
+    name=movex,from=50%+380,to=50%-220,time=(500,+1000)
+    name=fade,from=255,time=(3500,+250)
+    name=movey,from=600,to=660,time=(3500,+250)
+:note-2
+    name=fade,to=255,time=(16500,+100)
+    name=movex,from=50%+400,to=50%-200,time=(16500,+1000)
+    name=fade,from=255,time=(19500,+250)
+    name=movey,from=600,to=660,time=(19500,+250)
+:note-6L
+    name=fade,to=255,time=(20500,+100)
+    name=mx,from=50%+380-35,to=50%-220-35,time=(20500,+1000)
+    name=w,from=35,to=335,time=(20500,+500)
+    name=w,from=335,to=35,time=(21500,+1500)
+    name=fade,from=255,time=(23500,+250)
+    name=movey,from=600,to=660,time=(23500,+250)
+
+:tap-1
+    name=fade,to=255,time=(1500,+50)
+    name=fade,from=255,time=(3500,+50)
+    name=fade,to=255,time=(21500,+50),repeat=(3,500)
+    name=fade,from=255,time=(21750,+50),repeat=(3,500)
+:tap-2
+    name=fade,to=255,time=(5500,+50)
+    name=fade,from=255,time=(7500,+50)
+    name=fade,to=255,time=(13500,+50)
+    name=fade,from=255,time=(15500,+50)
+    name=fade,to=255,time=(21750,+50),repeat=(3,500)
+    name=fade,from=255,time=(22000,+50),repeat=(3,500)
+:tap-3
+    name=fade,to=255,time=(13500,+50)
+    name=fade,from=255,time=(15500,+50)
+:tap-4
+    name=fade,to=255,time=(9500,+50)
+    name=fade,from=255,time=(11500,+50)
+    name=fade,to=255,time=(17500,+50),repeat=(3,500)
+    name=fade,from=255,time=(17750,+50),repeat=(3,500)
+:tap-5
+    name=fade,to=255,time=(9500,+50)
+    name=fade,from=255,time=(11500,+50)
+    name=fade,to=255,time=(17750,+50),repeat=(3,500)
+    name=fade,from=255,time=(18000,+50),repeat=(3,500)
+_note-[1-6]
+    tex=taiko-notered-0.png
+    size=0,70
+    anchor=4
+    pos=50%+380,600
+    opacity=0
+    zindex=2
+_note-1
+    motion=note-1
+_note-2
+    tex=taiko-noteblue-0.png
+    motion=note-1 delay=4000
+_note-3
+    tex=taiko-notered-big-0.png
+    size=0,100
+    motion=note-1 delay=8000
+_note-4
+    tex=taiko-noteblue-big-0.png
+    size=0,100
+    motion=note-1 delay=12000
+_note-5
+    motion=note-1 delay=16000
+_note-ball
+    tex=taiko-balloon.png
+    size=0,70
+    anchor=3
+    pos=50%+400,600
+    zindex=1
+    opacity=0
+    motion=note-2
+_note-6
+    tex=taiko-noteyellow-0.png
+    motion=note-1 delay=20000
+    zindex=2
+_note-6L
+    tex=taiko-renda.png
+	type=4
+    size2=105,70
+    anchor=3
+    pos=50%+380-35,600
+    zindex=1
+    opacity=0
+    motion=note-6L
+_tap-[1,2,3,4,5]
+    type=1
+    text=Tap!
+    fsize=60
+    color=#02ceff
+    anchor=4
+    pos=_drum 0,0
+    opacity=0
+_tap-1
+    motion=tap-1
+_tap-2
+    pos=_drum 300,0
+    motion=tap-2
+_tap-3
+    pos=_drum -300,0
+    motion=tap-3
+_tap-4
+    pos=_drum -100,0
+    motion=tap-4
+_tap-5
+    pos=_drum 100,0
+    motion=tap-5

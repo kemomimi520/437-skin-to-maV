@@ -1,0 +1,187 @@
+{
+  "basis": "Original 0x5a8e00 callback, synthetic metadata and Auto player only. Full nested placeholder grammar is not covered.",
+  "evidence": "output\\corpus-r40-metadata-level-old-r1\\report.json",
+  "evidence_sha256": "d8a0008b7d938d711683e5e3fd4c2ed6629c7f7756516c3d0f71b9f741a07077",
+  "rows": [
+    {
+      "token": "title",
+      "bpm_input": 150,
+      "value": "中文 Title / Aa19"
+    },
+    {
+      "token": "artist",
+      "bpm_input": 150,
+      "value": "Artist 作者"
+    },
+    {
+      "token": "creator",
+      "bpm_input": 150,
+      "value": "Creator 制谱"
+    },
+    {
+      "token": "version",
+      "bpm_input": 150,
+      "value": "Version 4K / 专家"
+    },
+    {
+      "token": "player",
+      "bpm_input": 150,
+      "value": "Auto"
+    },
+    {
+      "token": "bpm",
+      "bpm_input": 150,
+      "value": "150.00"
+    },
+    {
+      "token": "length",
+      "bpm_input": 150,
+      "value": ""
+    },
+    {
+      "token": "level",
+      "bpm_input": 150,
+      "value": ""
+    },
+    {
+      "token": "unknown",
+      "bpm_input": 150,
+      "value": ""
+    },
+    {
+      "token": "title",
+      "bpm_input": 150.75,
+      "value": "中文 Title / Aa19"
+    },
+    {
+      "token": "artist",
+      "bpm_input": 150.75,
+      "value": "Artist 作者"
+    },
+    {
+      "token": "creator",
+      "bpm_input": 150.75,
+      "value": "Creator 制谱"
+    },
+    {
+      "token": "version",
+      "bpm_input": 150.75,
+      "value": "Version 4K / 专家"
+    },
+    {
+      "token": "player",
+      "bpm_input": 150.75,
+      "value": "Auto"
+    },
+    {
+      "token": "bpm",
+      "bpm_input": 150.75,
+      "value": "150.75"
+    },
+    {
+      "token": "length",
+      "bpm_input": 150.75,
+      "value": ""
+    },
+    {
+      "token": "level",
+      "bpm_input": 150.75,
+      "value": ""
+    },
+    {
+      "token": "unknown",
+      "bpm_input": 150.75,
+      "value": ""
+    },
+    {
+      "token": "title",
+      "bpm_input": 175.55499267578125,
+      "value": "中文 Title / Aa19"
+    },
+    {
+      "token": "artist",
+      "bpm_input": 175.55499267578125,
+      "value": "Artist 作者"
+    },
+    {
+      "token": "creator",
+      "bpm_input": 175.55499267578125,
+      "value": "Creator 制谱"
+    },
+    {
+      "token": "version",
+      "bpm_input": 175.55499267578125,
+      "value": "Version 4K / 专家"
+    },
+    {
+      "token": "player",
+      "bpm_input": 175.55499267578125,
+      "value": "Auto"
+    },
+    {
+      "token": "bpm",
+      "bpm_input": 175.55499267578125,
+      "value": "175.55"
+    },
+    {
+      "token": "length",
+      "bpm_input": 175.55499267578125,
+      "value": ""
+    },
+    {
+      "token": "level",
+      "bpm_input": 175.55499267578125,
+      "value": ""
+    },
+    {
+      "token": "unknown",
+      "bpm_input": 175.55499267578125,
+      "value": ""
+    },
+    {
+      "token": "title",
+      "bpm_input": 0,
+      "value": "中文 Title / Aa19"
+    },
+    {
+      "token": "artist",
+      "bpm_input": 0,
+      "value": "Artist 作者"
+    },
+    {
+      "token": "creator",
+      "bpm_input": 0,
+      "value": "Creator 制谱"
+    },
+    {
+      "token": "version",
+      "bpm_input": 0,
+      "value": "Version 4K / 专家"
+    },
+    {
+      "token": "player",
+      "bpm_input": 0,
+      "value": "Auto"
+    },
+    {
+      "token": "bpm",
+      "bpm_input": 0,
+      "value": "0.00"
+    },
+    {
+      "token": "length",
+      "bpm_input": 0,
+      "value": ""
+    },
+    {
+      "token": "level",
+      "bpm_input": 0,
+      "value": ""
+    },
+    {
+      "token": "unknown",
+      "bpm_input": 0,
+      "value": ""
+    }
+  ]
+}

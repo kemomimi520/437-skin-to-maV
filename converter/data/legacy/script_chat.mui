@@ -1,0 +1,226 @@
+@include script_sub_head.mui
+@unit 1080
+
+@define main_x 499
+@define right_x 86
+@define list_x 368
+@define input_h 84
+
+@if phone
+@define main_x 725
+@define right_x 46
+@define list_x 600
+@define input_h 110
+@endif
+
+@if <1.44
+@define right_x 46
+@endif
+
+_head-t
+    lang=911
+_head-back
+    etag=102
+    tag=1
+_bg-channel
+    type=5
+    tex=ui-chat-bg.png
+    rect=20px,148px,40px,40px
+    size={main_x}-75,752
+    size2=0,1080px
+    anchor=6
+    pos=47,171
+    zindex=1
+_bg-main
+    type=5
+    tex=ui-chat-bg2.png
+    rect=18px,62px,118px,60px
+    size=100%-{main_x}-{right_x},676
+    size2=0,1080px
+    anchor=6
+    pos={main_x},171
+    zindex=1
+_bg-input
+    type=4
+    tex=ui-chat-bg3.png
+    part=24px,78px
+    size=100%-{main_x}-{right_x},{input_h}
+    anchor=3
+    pos={main_x},99
+    zindex=1
+_room-title
+    type=1
+    fsize={f1}
+    text=#公频
+    anchor=0
+    pos={main_x},100%-170
+    zindex=3
+_chan-title
+    type=1
+    fsize={f2}
+    lang=808
+    anchor=6
+    pos=103,100%-226
+    zindex=3
+_chan-add
+    tex=ui-chat-add.png
+    anchor=3
+    pos={main_x}-100,100%-203
+    size={f3}+8,0
+    etag=102
+    tag=2
+    zindex=5
+_online
+    type=1
+    color=#8DC449
+    fsize={f3}
+    anchor=6
+    pos=100%-332,100%-226
+    zindex=5
+_emoji
+    tex=ui-chat-emoji.png
+    size={f3}+30,0
+    anchor=5
+    pos=100%-{right_x}-30,98
+    etag=102
+    tag=3
+    zindex=5
+_emoji-area
+    type=5
+    tex=ui-chat-bg4.png
+    rect=10px,10px,48px,10px
+    size=800,320
+    size2=0,1080px
+    size3=80,80
+    anchor=8
+    pos=100%-{right_x},154
+    zindex=6
+    etag=-2
+    show=0
+_textbox
+    type=105
+    fsize={f3}
+    anchor=3
+    pos=_bg-input 20,0
+    size=_bg-input -100,0
+    tex=g-inputbar.png
+    size2=0,41
+    etag=102
+    tag=4
+    zindex=5
+_avatar
+    type=102
+    size2=80,80
+    tex=g-avatar-l.png
+    anchor=3
+    pos=74,96
+_icon-online
+    tex=g-online.png
+    size=26,26
+    anchor=3
+    pos=130,70
+    zindex=2
+_username
+    type=1
+    fsize={f3}
+    anchor=6
+    pos=172,96
+    zindex=5
+_onlinestr
+    type=1
+    text=Online
+    fsize={f3}
+    color=#8DC449
+    anchor=6
+    pos=_username 0,-30
+    zindex=5
+_list
+    type=101
+    size={list_x},643
+    anchor=6
+    pos=_bg-channel 25,25
+    zindex=5
+_chatlist
+    type=101
+    size=_bg-main -40,-55
+    anchor=6
+    pos=_bg-main 20,25
+    zindex=5
+_scroll-1
+    tex=g-scroll.png
+    size=2,643
+    anchor=8
+    pos=_list {list_x},0
+    zindex=3
+_scrollbar-1
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll-1
+    pos=2,0
+_scroll-2
+    tex=g-scroll.png
+    size=2,590
+    anchor=8
+    pos=100%-{right_x}-20,171+25
+    zindex=3
+_scrollbar-2
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll-2
+    pos=2,0
+
++chan-item
+_chan-item
+    size={list_x},{f2}+10
+_chan-item-bg
+    type=2
+    color=#ffffff
+    opacity=30
+    parent=_chan-item
+    size=100%,100%
+    anchor=6
+    tag=4
+    show=0
+_chan-item-icon
+    tex=ui-chat-msg.png
+    size={f2}-8,0
+    anchor=3
+    parent=_chan-item
+    pos=2,50%
+    tag=1
+    show=0
+_chan-item-title
+    type=1
+    fsize={f2}
+    size2={list_x}-{f2}-10,0
+    anchor=3
+    parent=_chan-item
+    pos=34,50%+10
+    tag=2
+_chan-item-btn
+    tex=ui-store-close.png
+    size={f2},0
+    anchor=5
+    parent=_chan-item
+    pos=100%-16,50%
+    tag=3
+
+
+@if phone
+_emoji-area
+    size=1200,480
+    size3=120,120
+_avatar
+    size2=100,100
+_chan-add
+    size=45,0
+_username
+    pos=180,90
+_emoji
+    size=0,100
+    pos=100%-{right_x}-20,100
+_onlinestr
+    pos=_username 0,-40
+@endif

@@ -1,0 +1,103 @@
+@include script_sub_head.mui
+@unit 1080
+
+_head-back
+	etag=113
+	tag=1
+_label-[8,9]
+	type=1
+	fsize={f2}
+	anchor=4
+	pos=50%,100%-200$-60
+	zindex=2
+
+_head-t
+	lang=902
+
+_label-8
+	lang=903
+
+_label-9
+	lang=904
+
+_text-2
+	type=1
+	fsize={f1}
+	anchor=4
+	pos=50%,220
+	text=0
+	zindex=2
+
+_opt-[5,6]
+	tex=ui-store-page.png
+	anchor=5
+	pos=_text-2 -70$140,0
+	tag=5$1
+	etag=113
+	zindex=2
+
+_opt-6
+	anchor=3
+	flip=2
+
+_button-[1-4]
+    type=4
+    tex=g-dialogbtn.png
+    tex2=g-dialogbtn2.png
+    part=7,46
+    size=263,68
+    anchor=4
+    pos=50%-500$334,100
+    hover=g-dialogbtn2.png
+    leave=g-dialogbtn.png
+    etag=113
+    tag=7$1
+_buttonstr-[1-4]
+    type=1
+    fsize={f2}
+    anchor=4
+    text=RESET
+    pos=131.5,34
+_buttonstr-1
+	parent=_button-1
+	lang=906
+_buttonstr-2
+	parent=_button-2
+	lang=905
+_buttonstr-3
+	parent=_button-3
+	lang=907
+_buttonstr-4
+	parent=_button-4
+	lang=908
+
+_judge
+	tex=ui-guide-bar.png
+	size=0,150
+	anchor=4
+	pos=50%,50%-40
+	zindex=2
+
+_text-3
+	type=1
+	fsize={f1}
+	anchor=4
+	pos=50%,50%+70
+	text=0
+
+_notelist
+	anchor=4
+	pos=50%,50%-40
+	zindex=2
+
+note-1
+	tex=ui-guide-note.png
+	size=0,120
+	anchor=4
+
+_touch
+	size=90%,400
+	anchor=4
+	pos=_judge 0,0
+	etag=113
+	tag=11

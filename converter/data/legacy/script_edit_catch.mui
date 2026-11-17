@@ -1,0 +1,103 @@
+@include script_edit_config.mui
+@include script_edit_pc.mui
+
+@define gridW 1280w-300
+@if phone
+@define gridW 1280w-330
+@endif
+
+_right-icon3-2
+    tex=ui-edit-icon14.png
+    tag=1
+_right-icon3-3
+    tex=ui-edit-icon15.png
+    tag=2
+_right-icon3-4
+    tex=ui-edit-icon21.png
+    tag=83
+_right-icon3-5
+    tex=ui-edit-icon20.png
+    tag=85
+_right-icon3-[2-5]
+    show=1
+_right-tip3-2
+    text=Note
+_right-tip3-3
+    text=Rain
+_right-tip3-4
+    text=Remove
+_right-tip3-5
+    text=More
+_right-tip3-[2-5]
+    show=1
+_edit
+    size=100%,100%
+    anchor=6
+    pos=0,0
+    zindex=1
+    etag=105
+_grids
+    size=100%,100%
+    anchor=6
+    pos=0,0
+_gridbg
+    type=4
+    tex=ui-edit-bg5.png
+    part=10,80
+    size2={gridW},100%
+    anchor=6
+    pos=240,0
+
+_judge
+    tex=ui-edit-keybar.png
+    size={gridW},5
+    anchor=6
+    pos=240,60
+_sample
+    tex=ui-edit-catchnote.png
+    size=80,80
+    show=0
+    pos=0,20%
+_notehold
+    anchor=6
+    tex=ui-edit-catchbar.png
+    size={gridW},3
+    size2=0,16
+    part=20px,76px
+    pos=_judge 0,0
+    zindex=2
+    parent=_edit
+_infol-100
+    type=1
+    fsize=20
+    lang=3045
+_infoe-100
+    type=4
+    tex=g-input.png
+    part=10,50
+    size=330,40
+    etag=104
+    tag=57
+_infot-100
+    type=105
+    fsize=20
+    size=300,40
+    tex=g-inputbar.png
+    size2=0,41
+    anchor=3
+    pos=10,20
+    etag=104
+    tag=57
+    parent=_infoe-100
+
+@if phone
+_sample
+    pos=0,50%
+_infoe-100
+    size=530,90
+_infot-100
+    fsize=40
+    size=520,50
+    size2=0,80
+    pos=20,42
+@endif

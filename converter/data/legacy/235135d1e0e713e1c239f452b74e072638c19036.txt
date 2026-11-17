@@ -1,0 +1,26 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+varying vec4 v_fragmentColor;
+varying vec2 v_texCoord;
+uniform sampler2D tex_y;
+uniform sampler2D tex_u;
+uniform sampler2D tex_v;
+
+const mat3 yuv2rgb = mat3(
+    1.164383, 1.164383, 1.164383,
+    0, -0.391762, 2.017232,
+    1.596027, -0.812968, 0
+);
+
+void main()
+{
+    //it's so magic
+    vec3 yuv;
+    yuv.y = texture2D(tex_u, v_texCoord).r - 0.5;
+    yuv.z = texture2D(tex_v, v_texCoord).r - 0.5;
+    yuv.x = texture2D(tex_y, v_texCoord).r;
+    
+    gl_FragColor = vec4(yuv2rgb * yuv, v_fragmentColor.a);
+}

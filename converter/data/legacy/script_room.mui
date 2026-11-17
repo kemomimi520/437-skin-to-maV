@@ -1,0 +1,497 @@
+@include script_sub_head.mui
+@unit 1080
+
+@define pad 67
+@define right_w 812
+@define area_h 579
+@define area_p 37
+@define sitem_w 947
+@define area1_w 509
+@define list_w 352
+@if <1.65
+@define pad 40
+@define sitem_w 830
+@define area1_w 420
+@endif
+@if <1.44
+@define right_w 530
+@define area_p 20
+@define sitem_w 890
+@define area1_w 480
+@define list_w 430
+@endif
+@if <1.4
+@define right_w 450
+@define list_w 355
+@endif
+
+@if > 1.85
+@define right_w 882
+@define sitem_w 1017
+@endif
+
+_head-back
+    etag=122
+    tag=1
+_head-t
+    lang=915
+_head-btn
+    tex=icon-level.png
+    size=0,39
+    anchor=5
+    parent=_head
+    pos=100%-118-{icon_p}-{ipx},50%+10
+    etag=122
+    tag=7
+    zindex=2
+_head-btnstr
+    type=1
+    fsize={f3}
+    anchor=3
+    pos=_head-btn 5,0
+    parent=_head
+    etag=122
+    tag=7
+    zindex=10
+_sharecode
+    type=1
+    fsize={f3}
+    anchor=5
+    pos=_head-btn -65,0
+    parent=_head
+    zindex=10
+    show=0
+_songitem
+    size={sitem_w},195
+    anchor=0
+    pos={pad},100%-173
+    etag=122
+    tag=2
+_sitem-bg
+    type=4
+    tex=g-diffbg.png
+    part=20,150
+    size=_songitem 0,0
+    anchor=6
+    parent=_songitem
+_sitem-shadow
+    tex=g-coverbg.png
+    size=0,270
+    anchor=4
+    parent=_songitem
+    pos=103,50%
+    zindex=2
+_sitem-cover
+    type=107
+    size2=210,210
+    tex=g-cover.png
+    anchor=4
+    parent=_songitem
+    pos=_sitem-shadow 0,0
+    zindex=3
+_sitem-mode
+    tex=mode0.png
+    anchor=4
+    size=0,40
+    pos=_sitem-shadow -65,65
+    parent=_songitem
+    zindex=4
+_sitem-title
+    type=1
+    fsize={f1}
+    size2=480,0
+    anchor=6
+    pos=200+{area_p},129
+    parent=_songitem
+    zindex=5
+    tag=2
+_sitem-artist
+    type=1
+    fsize={f3}
+    size2=480,0
+    anchor=6
+    pos=_sitem-title 0,-37
+    parent=_songitem
+    zindex=5
+    tag=3
+_sitem-meta
+    type=1
+    fsize={f3}
+    anchor=6
+    pos=200+{area_p},20
+    parent=_songitem
+    zindex=5
+    tag=4
+_sitem-score0
+    tex=g-scorebg0.png
+    size=0,184
+    anchor=4
+    parent=_songitem
+    pos=100%-109,50%
+    zindex=2
+_sitem-score1
+    tex=g-scorebg1.png
+    size=0,131
+    anchor=4
+    parent=_songitem
+    pos=_sitem-score0 0,0
+    zindex=3
+_sitem-level
+    tex=icon-rank0.png
+    size=0,66
+    anchor=4
+    parent=_songitem
+    pos=_sitem-score0 0,0
+    zindex=4
+_area1
+    type=5
+    tex=ui-room-bg0.png
+    rect=20px,60px,60px,50px
+    size={sitem_w},180
+    size2=0,1080px
+    anchor=6
+    pos={pad},500
+_area2
+    type=5
+    tex=ui-room-bg1.png
+    rect=20px,60px,40px,30px
+    size={sitem_w},398
+    size2=0,1080px
+    anchor=6
+    pos={pad},75
+_area3
+    size={right_w},832
+    anchor=8
+    pos=100%-{pad},75
+_area3-bg
+    type=5
+    tex=g-rightbg.png
+    rect=20px,144px,40px,80px
+    size=_area3 0,0
+    size2=0,1080px
+    anchor=6
+    parent=_area3
+_title-[1-3]
+    type=1
+    fsize={f1}
+    anchor=6
+    zindex=2
+_title-1
+    parent=_area1
+    pos={area_p},110
+    lang=821
+_title-2
+    parent=_area1
+    pos=400,110
+    lang=830
+_title-3
+    parent=_area2
+    pos={area_p},328
+    lang=827
+_titlesub-[1,2]
+    type=1
+    fsize={f3}
+    pos={area_p},80
+    anchor=6
+_titlesub-1
+    parent=_area1
+_titlesub-2
+    parent=_area2
+    pos={area_p},295
+    show=0
+_modarea
+    size={sitem_w}-420,60
+    parent=_area1
+    pos=400,53
+    anchor=6
+_icon-set-[1-3]
+    tex=ui-room-set.png
+    size=0,41
+    anchor=5
+    etag=122
+    zindex=3
+_icon-set-1
+    parent=_area1
+    pos=370,140
+    tag=3
+_icon-set-2
+    parent=_area1
+    pos=100%-{area_p},140
+    tag=4
+_icon-set-3
+    parent=_area2
+    pos=100%-{area_p},358
+    tag=5
+# team
+_teamstr-[1,2]
+    type=1
+    fsize={f2}
+    anchor=6
+    parent=_area2
+    pos={area_p}$430,290
+    show=0
+_teamstr-1
+    text=Red
+    color=#ef6666
+_teamstr-2
+    text=Blue
+    color=#02ceff
+_teamarea-[1,2]
+    opacity=20
+    anchor=6
+    pos={pad}+{area_p}$430,20+75
+    size=400,270
+    etag=122
+    tag=200$1
+    zindex=3
+    show=0
+#right
+_title-[4-6]
+    type=1
+    fsize={f3}
+    anchor=6
+    parent=_area3
+_title-4
+    text=HOST
+    pos=59,778
+_title-5
+    text=WINNER
+    pos=59,558
+    show=0
+_title-6
+    text=PLAYERS
+    pos=416,778
+_area4
+    size=360,121
+    parent=_area3
+    anchor=6
+    pos=67,414
+    show=0
+_avatar-[1,2]
+    type=102
+    type2=1
+    size2=121,121
+    tex=g-avatar-l.png
+    anchor=3
+_hostname-[1,2]
+    type=1
+    fsize={f3}
+    anchor=6
+    size2=200,0
+_hostlv-[1,2]
+    type=1
+    fsize={f3}
+    anchor=6
+    color=#999999
+_avatar-1
+    parent=_area3
+    pos=67,694
+_hostname-1
+    parent=_area3
+    pos=210,724
+_hostlv-1
+    parent=_area3
+    pos=_hostname-1 0,-45
+_avatar-2
+    parent=_area4
+    anchor=6
+_hostname-2
+    parent=_area4
+    pos=144,88
+_hostlv-2
+    parent=_area4
+    pos=_hostname-2 0,-45
+_avatar-win
+    tex=ui-room-win.png
+    size=0,42
+    anchor=4
+    parent=_area4
+    pos=5,113
+_btn-ready
+    type=4
+    tex=g-dialogbtn.png
+    tex2=g-dialogbtn2.png
+    part=7,46
+    size=263,68
+    anchor=6
+    parent=_area3
+    pos=59,41
+    hover=g-dialogbtn2.png
+    leave=g-dialogbtn.png
+    etag=122
+    tag=6
+_btn-readystr
+    type=1
+    fsize={f2}
+    anchor=4
+    pos=131.5,34
+    text=Ready
+    parent=_btn-ready
+_list
+    type=101
+    size={list_w},734
+    anchor=2
+    parent=_area3
+    pos=100%-42,764
+_scroll
+    tex=g-scroll.png
+    size=2,734
+    anchor=2
+    parent=_area3
+    pos=100%-36,764
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
++item
+_item
+    size={list_w},69
+    anchor=6
+#    parent=_list
+_item-avatar
+    type=102
+    size2=51,51
+    type2=1
+    tex=g-avatar.png
+    anchor=4
+    parent=_item
+    pos=38.5,34.5
+    tag=1
+_item-self
+    tex=ui-room-self.png
+    size=0,66
+    anchor=4
+    parent=_item
+    pos=_item-avatar 0,0
+    tag=2
+_item-ping
+    tex=ui-room-ping3.png
+    size=0,21
+    parent=_item
+    anchor=6
+    pos=79,23
+    tag=3
+_item-dev
+    tex=ui-room-dev1.png
+    size=0,21
+    parent=_item
+    anchor=6
+    pos=105,23
+    tag=6  
+_item-ready
+    tex=ui-room-ready.png
+    size=0,26
+    parent=_item
+    anchor=5
+    pos=100%-5,32
+    tag=5
+_item-name
+    type=1
+    fsize={f3}
+    size2=180,0
+    parent=_item
+    anchor=3
+    pos=130,40
+    tag=4
+_item-msgbg
+    type=4
+    tex=ui-room-bg2.png
+    part=25,45
+    size=274,42
+    anchor=3
+    parent=_item
+    pos=74,50%
+    tag=7
+    zindex=2
+    show=0
+_item-msg
+    type=1
+    fsize={f3}
+    size2=270,0
+    parent=_item
+    anchor=3
+    pos=76,50%+7
+    tag=8
+    zindex=3
+    show=0
+_item-icon
+    tex=emo-0.png
+    size=0,40
+    anchor=3
+    parent=_item
+    pos=76,50%
+    tag=9
+    zindex=3
+    show=0
+
+@if phone
+_icon-set-[1-3]
+    size=0,60
+_sitem-mode
+    size=0,50
+_title-4
+    pos=59,765
+_title-5
+    pos=59,490
+_area4
+    pos=67,354
+_title-6
+    pos=350,765
+_hostname-1
+    pos=67,600
+_hostlv-1
+    pos=_hostname-1 0,-45
+_hostname-2
+    pos=0,-34
+_hostlv-2
+    pos=_hostname-2 0,-45
+_list
+    size=420,734
+_item
+    size=420,69
+_item-ping
+    size=0,35
+    pos=77,20
+_item-dev
+    size=0,35
+    pos=115,20
+_item-name
+    pos=154,42
+    size2=220,0
+_item-ready
+    pos=415,32
+_item-msgbg
+    size=335,50
+_item-msg
+    size2=330,0
+@endif
+
+@if >1.85
+_teamarea-[1,2]
+    size=440,270
+    pos={pad}+{area_p}$460,20+75
+@endif
+
+@if <1.44
+@del _title-5
+_title-4
+    show=0
+_area4
+    show=0
+_avatar-[1,2]
+    show=0
+_hostname-1
+    show=0
+_hostlv-1
+    show=0
+_hostping
+    show=0
+_title-6
+    pos=50,778
+_list
+    size={list_w},640
+_scroll
+    size=2,640
+@endif

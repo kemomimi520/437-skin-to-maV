@@ -1,0 +1,28 @@
+@unit 1080
+
+_item-title
+    pos=235,145
+    size2=270,0
+_item-name
+    pos=_item-title 0,-29
+_item-mod
+    pos=_item-title 0,-123
+
+_item-pre-[1-3]
+    parent=_item
+    pos=100%-280$-200,50%
+_item-pre-3
+    show=0
+_item-hot
+    parent=_item
+    pos=100%-224,130
+_item-gold
+    parent=_item
+    pos=100%-224,73
+_item-num-[1,2]
+    parent=_item
+    pos=100%-210,130$-57
+_item2-title
+    size2=600,0
+_item2-desc
+    size2=700,0

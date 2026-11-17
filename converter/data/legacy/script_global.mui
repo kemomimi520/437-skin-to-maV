@@ -1,0 +1,87 @@
+@unit 1080
+
+@define ipx 0
+@define f1 40
+@define f2 32
+@define f3 24
+
+@if phonex
+@define ipx 55
+@endif
+
+@if phonex
+@define ipx 55
+@define f1 50
+@define f2 45
+@define f3 30
+@endif
+
++btm
+@if phone
+@unit 720
+@endif
+_btm_hold
+    type=200
+    size=150,60
+    pos={ipx},0
+_btm-icon-1
+    tex=ui-prof-chat.png
+    size=0,50
+    anchor=4
+    pos=34,27
+    etag=125
+    tag=1
+_btm-tip
+    tex=ui-chat-msg.png
+    size=0,24
+    anchor=4
+    pos=58,48
+    zindex=2
+_btm-icon-2
+    tex=ui-chat-quick.png
+    size=0,60
+    anchor=4
+    pos=106,27
+
+@unit 1080
++hp
+hp
+    tex=ui-play-hp0.png
+    size=0,54
+    anchor=2
+    pos=100%,100%-10
+    zindex=100
+hpbar
+    type=0
+    size=469,28
+    type2=1
+    tex=ui-play-hp1.png
+    pos=100%-18,100%-10-27
+    anchor=5
+    zindex=101
++team
+_team
+    size=200,81
+    anchor=2
+    pos=100%,100%-90
+_teambg
+    type=4
+    tex=ui-chart-bg3.png
+    part=20,60
+    size=300,81
+    anchor=6
+    pos=0,0
+    parent=_team
+_team-flag
+    tex=ui-play-flag0.png
+    anchor=4
+    size=0,44
+    pos=40,40
+    parent=_team
+_team-text
+    type=1
+    fsize={f2}
+    text=+1.89%
+    anchor=3
+    pos=75,40
+    parent=_team

@@ -1,0 +1,43 @@
+@unit 720
+
+@define panelW 390
+@define listW 330
+@define panelF 20
+@define rightW 50
+@define rightF 24
+@define rightP 60
+@define rightT 40
+@define rightH 32
+@define rightX 24
+@define rightRH 0
+@define rightRW 0
+@define moreW 240
+@define moreH 500
+@define moreIH 40
+
+@if phone
+@define panelW 590
+@define listW 530
+@define panelF 25
+@define rightW 70
+@define rightF 35
+@define rightP 75
+@define rightT 50
+@define rightH 45
+@define rightX 35
+@define rightRH 14
+@define rightRW 8
+@define moreW 340
+@define moreH 600
+@define moreIH 60
+@endif
+
+:right_close
+    name=mx,from=100%,to=100%+{rightW}+10,time=100
+    name=hide,time=(101,1)
+:right_show
+    name=show,time=0
+    name=mx,from=100%+{rightW}+10,to=100%,time=100
+:right_tip
+    name=fade,to=100,time=(0,100)
+    name=fade,from=100,time=(2000,2700)

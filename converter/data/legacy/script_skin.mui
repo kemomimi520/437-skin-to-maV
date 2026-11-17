@@ -1,0 +1,230 @@
+@include script_sub_head.mui
+@unit 1080
+
+_head-t
+    lang=918
+_head-back
+    etag=109
+    tag=1
+_head-btn-[2,3]
+    tex=icon-mode.png
+    size=0,69
+    anchor=4
+    etag=109
+    parent=_head
+    pos=100%-55-{ipx}$-71.5-{icon_p},50%+8
+    tag=2
+    zindex=2
+_head-btn-3
+    tex=ui-skin-ol.png
+    tag=3
+_bar-2
+    tex=ui-line1.png
+    anchor=0
+    pos=62,100%-109
+    size=94,100%-109-36
+_bar-3
+    type=4
+    type2=2
+    tex=ui-line0.png
+    part=40,144
+    anchor=3
+    pos=62+94,36
+    size=100%-62-94-87,8
+_list-[1,2]
+    type=101
+    size=100%-151-130,830+15
+    size2=0,40
+    anchor=6
+    pos=151,52
+    tex=g-empty.png
+    size3=0,200
+_scroll
+    tex=g-scroll.png
+    size=2,820
+    anchor=8
+    pos=100%-40,68
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
++item
+_item
+    size=100%-151-130,210
+_item-bg
+    type=4
+    tex=g-diffbg.png
+    part=20,150
+    parent=_item
+    size=100%,195
+    anchor=6
+    pos=0,7
+    tag=12
+_item-cover
+    type=102
+    size2=210,210
+    tex=ui-skin-cover.png
+    anchor=6
+    pos=0,0
+    parent=_item
+    zindex=2
+    tag=1
+_item-avatar
+    type=102
+    size2=62,62
+    tex=g-avatar.png
+    type2=1
+    anchor=7
+    pos=185,-8
+    zindex=2
+    parent=_item
+    tag=2
+_item-title
+    type=1
+    fsize={f2}
+    anchor=6
+    pos=259,145
+    parent=_item
+    size2=400,0
+    zindex=2
+    tag=3
+_item-name
+    type=1
+    fsize={f3}
+    anchor=6
+    pos=_item-title 0,-40
+    parent=_item
+    zindex=2
+    tag=4
+_item-mod
+    anchor=6
+    size=45,45
+    pos=_item-title 0,-123
+    parent=_item
+    zindex=2
+    tag=5
+_item-dl
+    tex=icon-dl.png
+    size=0,34
+    anchor=4
+    parent=_item
+    pos=100%-70,50%
+    zindex=2
+    tag=11
+_item-hot
+    tex=g-hot.png
+    size=0,31
+    anchor=5
+    parent=_item
+    pos=100%-324,130
+    zindex=2
+_item-gold
+    tex=g-gold.png
+    size=0,22.5
+    anchor=5
+    parent=_item
+    pos=100%-324,73
+    zindex=2
+_item-num-[1,2]
+    type=1
+    fsize={f3}
+    anchor=3
+    parent=_item
+    pos=100%-310,130$-57
+    zindex=2
+    tag=6$1
+_item-pre-[1-3]
+    type=102
+    size2=189,139
+    anchor=5
+    parent=_item
+    pos=100%-384$-210,50%
+    zindex=2
+    tag=8$1
++item2
+_item2
+    size=100%-151-130,210
+_item2-bg
+    type=4
+    tex=g-diffbg.png
+    part=20,150
+    parent=_item2
+    size=100%,195
+    anchor=6
+    pos=0,7
+    tag=6
+_item2-cover
+    type=102
+    size2=210,210
+    tex=ui-skin-cover.png
+    anchor=6
+    pos=0,0
+    parent=_item2
+    zindex=2
+    tag=1
+_item2-title
+    type=1
+    fsize={f2}
+    size2=700,0
+    anchor=6
+    pos=259,145
+    parent=_item2
+    zindex=2
+    tag=2
+_item2-desc
+    type=1
+    fsize={f3}
+    anchor=6
+    pos=_item2-title 0,-40
+    size2=1100,0
+    parent=_item2
+    zindex=2
+    tag=7
+_item2-mod
+    tex=mode0.png
+    anchor=6
+    size=45,45
+    pos=_item2-title 0,-123
+    parent=_item2
+    zindex=2
+    tag=3
+    show=0
+_item2-del
+    tex=icon-del.png
+    size=0,40
+    anchor=4
+    parent=_item2
+    pos=100%-71,50%
+    zindex=2
+    tag=4
+_item2-fol
+    tex=icon-folder.png
+    size=0,32
+    anchor=4
+    parent=_item2
+    pos=_item2-del -63,0
+    zindex=2
+    tag=5
+
+@if phone
+_head-btn-2
+    tex=icon-mode0.png
+_head-btn-3
+    tex=ui-skin-ol0.png
+_item-dl
+    size=0,60
+    parent=_item
+    pos=100%-70,50%
+_item2-del
+    size=0,60
+    parent=_item2
+    pos=100%-70,50%
+_item2-fol
+    size=0,55
+    parent=_item2
+    pos=100%-180,50%
+@endif
+
+@includex <1.4 script_skin@1.4.mui

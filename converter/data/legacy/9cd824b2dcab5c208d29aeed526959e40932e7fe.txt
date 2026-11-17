@@ -1,0 +1,23 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+varying vec4 v_fragmentColor;
+varying vec2 v_texCoord;
+
+uniform vec2 resolution;
+uniform vec2 offset;
+uniform vec2 content;
+uniform float r;
+
+void main(void)
+{
+	vec2 _xy = v_texCoord.xy * resolution.xy;
+	_xy -= offset;
+
+	vec2 r0 = content / 2.0;
+    float _r = distance(r0, _xy);
+	float a = smoothstep(r - 1.2, r, _r);
+	gl_FragColor = texture2D(CC_Texture0, v_texCoord);
+	gl_FragColor.a = 1.0 - a;
+}

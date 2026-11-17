@@ -1,0 +1,443 @@
+@include script_sub_head.mui
+@unit 1080
+
+@define right_x 523
+@define slide_w 1092
+@define slide_x 1069
+
+@if <1.44
+@define right_x 423
+@define slide_w 765
+@define slide_x 800
+@endif
+
+_head-t
+    lang=910
+_head-btn-[2-6]
+    tex=icon-setting.png
+    size=0,69
+    anchor=4
+    etag=107
+    parent=_head
+    pos=100%-55-{ipx}$-71.5-{icon_p},50%+8
+    zindex=2
+_head-back
+    etag=107
+    tag=1
+_head-btn-2
+    tex=icon-setting.png
+    tag=4
+_head-btn-3
+    tex=icon-input.png
+    tag=42
+_head-btn-4
+    tex=icon-system.png
+    tag=5
+_head-btn-5
+    tex=icon-video.png
+    tag=3
+_head-btn-6
+    tex=icon-audio.png
+    tag=2
+# frame
+_bar-1
+    type=4
+    tex=ui-line2.png
+    part=8,24
+    size=100%-62,8
+    anchor=0
+    pos=62,100%-148
+_bar-2
+    tex=ui-line1.png
+    anchor=0
+    pos=_bar-1 0,0
+    size=94,100%-148-36
+_bar-3
+    type=4
+    type2=2
+    tex=ui-line0.png
+    part=40,144
+    anchor=3
+    pos=62+94,36
+    size=100%-62-94-87,8
+_scroll
+    tex=g-scroll.png
+    size=2,800
+    anchor=7
+    pos=100%-46,36
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
+_list
+    type=101
+    anchor=6
+    pos=134,68
+    size=100%-134-118,858
+_title-1
+_line-1
+_area1-[1-6]
+    parent=_list
+    size=100%,90
+_title-2
+_line-2
+_area2-[1-8]
+    parent=_list
+    size=100%,90
+_title-3
+_line-3
+_area3-[1,5,3,7,6,4,2]
+    parent=_list
+    size=100%,90
+_title-4
+_line-4
+_area4-[2-6]
+    parent=_list
+    size=100%,90
+_title-5
+_line-5
+_area5-[1,2,4-8]
+    parent=_list
+    size=100%,90
+_line-6
+_area6-[1-3]
+    parent=_list
+    size=100%,90
+_title-[1-5]
+    type=1
+    fsize={f1}
+    parent=_list
+_title-1
+    lang=0
+_title-2
+    lang=1
+_title-3
+    lang=2
+_title-4
+    lang=3
+_title-5
+    lang=4
+_line-[1-6]
+    type=2
+    color=#ffffff
+    parent=_list
+    size=100%,1
+_label-[1-19,23-31]
+    type=1
+    fsize={f2}
+    anchor=3
+    pos=87,45
+_label-1
+    lang=50
+    parent=_area1-1
+_label-2
+    lang=51
+    parent=_area1-2
+_label-3
+    lang=34
+    parent=_area1-3
+_label-4
+    lang=35
+    parent=_area1-4
+_label-5
+    lang=52
+    parent=_area2-1
+_label-6
+    lang=53
+    parent=_area2-2
+_label-7
+    lang=18
+    parent=_area2-3
+_label-8
+    lang=19
+    parent=_area2-4
+_label-9
+    lang=21
+    parent=_area2-5
+_label-10
+    lang=29
+    parent=_area2-6
+_label-11
+    lang=54
+    parent=_area2-7
+_label-12
+    lang=38
+    parent=_area2-8
+_label-13
+    lang=10
+    parent=_area3-1
+_label-14
+    lang=37
+    parent=_area3-2
+_label-15
+    lang=58
+    parent=_area3-3
+_label-16
+    lang=25
+    parent=_area3-4
+_label-17
+    lang=9
+    parent=_area3-5
+_label-18
+    lang=7
+    parent=_area3-6
+_label-19
+    lang=63
+    parent=_area1-6
+_label-23
+    lang=1006
+    parent=_area4-2
+_label-24
+    lang=31
+    parent=_area4-3
+_label-25
+    lang=39
+    parent=_area4-4
+_label-26
+    lang=49
+    parent=_area5-1
+_label-27
+    lang=55
+    parent=_area5-2
+_label-28
+    lang=62
+    parent=_area3-7
+_label-29
+    lang=57
+    parent=_area1-5
+_label-30
+    lang=60
+    parent=_area6-1
+_label-31
+    lang=61
+    parent=_area6-2
+_desc-[1-3]
+    type=1
+    fsize={f2}
+    anchor=3
+    pos={right_x},45
+_desc-1
+    text=4.0.0
+    parent=_area6-1
+_desc-2
+    text=pc
+    parent=_area6-2
+_desc-3
+    lang=1055
+    parent=_area6-3
+_toggle-[1-15]
+    tex=g-opt.png
+    size=0,49
+    anchor=3
+    pos={right_x},45
+    etag=107
+_toggle-1
+    parent=_area1-3
+    tag=6
+_toggle-2
+    parent=_area2-3
+    tag=17
+_toggle-3
+    parent=_area2-4
+    tag=18
+_toggle-4
+    parent=_area2-5
+    tag=21
+_toggle-5
+    parent=_area2-6
+    tag=28
+_toggle-6
+    parent=_area2-8
+    tag=27
+_toggle-7
+    parent=_area3-1
+    tag=26
+_toggle-8
+    parent=_area3-3
+    tag=41
+_toggle-9
+    parent=_area3-5
+    tag=45
+_toggle-10
+    parent=_area3-7
+    tag=48
+_toggle-11
+    parent=_area4-2
+    tag=33
+_toggle-12
+    parent=_area4-3
+    tag=22
+_toggle-13
+    parent=_area4-4
+    tag=46
+_toggle-14
+    parent=_area1-6
+    tag=49
+_toggle-15
+    parent=_area1-5
+    tag=43
+_button-[1-13]
+    type=4
+    tex=ui-cfg-btn.png
+    part=10,62
+    size=490,49
+    anchor=3
+    pos={right_x},45
+    etag=107
+_buttonstr-[1-13]
+    type=1
+    text=test
+    fsize={f2}
+    anchor=4
+    pos=245,24.5
+_button-1
+    tag=7
+    parent=_area1-4
+_buttonstr-1
+    parent=_button-1
+_button-2
+    tag=31
+    parent=_area3-2
+_buttonstr-2
+    parent=_button-2
+_button-3
+    tag=25
+    parent=_area3-4
+_buttonstr-3
+    parent=_button-3
+_button-4
+    tag=44
+    parent=_area3-6
+_buttonstr-4
+    parent=_button-4
+_button-5
+    tag=34
+    parent=_area5-1
+_buttonstr-5
+    parent=_button-5
+_button-6
+    tag=40
+    parent=_area5-2
+_buttonstr-6
+    parent=_button-6
+_button-7
+    tag=23
+    parent=_area4-5
+_buttonstr-7
+    lang=12
+    parent=_button-7
+_button-8
+    tag=24
+    parent=_area4-6
+_buttonstr-8
+    lang=22
+    parent=_button-8
+_button-9
+    tag=36
+    parent=_area5-4
+_buttonstr-9
+    lang=24
+    parent=_button-9
+_button-10
+    tag=37
+    parent=_area5-5
+_buttonstr-10
+    lang=43
+    parent=_button-10
+_button-11
+    tag=38
+    parent=_area5-6
+_buttonstr-11
+    lang=46
+    parent=_button-11
+_button-12
+    tag=39
+    parent=_area5-7
+_buttonstr-12
+    lang=28
+    parent=_button-12
+_button-13
+    tag=50
+    parent=_area5-8
+_buttonstr-13
+    text=Export log
+    parent=_button-13
+_slidebg-[1-5]
+    type=4
+    tex=ui-setting-bg0.png
+    part=24,86
+    size={slide_w},47
+    anchor=6
+    pos={right_x},22
+    zindex=3
+    etag=107
+_slidebg-1
+    parent=_area1-1
+    tag=9
+_slidebg-2
+    parent=_area1-2
+    tag=11
+_slidebg-3
+    parent=_area2-1
+    tag=13
+_slidebg-4
+    parent=_area2-2
+    tag=15
+_slidebg-5
+    parent=_area2-7
+    tag=29
+_slide-[1-5]
+    type=106
+    tex=ui-setting-bg1.png
+    size={slide_w},47
+    anchor=6
+    pos=_slidebg-1 0,0
+    zindex=2
+_slide-1
+    parent=_area1-1
+_slide-2
+    parent=_area1-2
+_slide-3
+    parent=_area2-1
+_slide-4
+    parent=_area2-2
+_slide-5
+    parent=_area2-7
+_slidestr-[1-5]
+    type=1
+    fsize={f2}
+    anchor=4
+    pos={slide_x},45
+    zindex=4
+    text=100
+_slidestr-1
+    parent=_area1-1
+_slidestr-2
+    parent=_area1-2
+_slidestr-3
+    parent=_area2-1
+_slidestr-4
+    parent=_area2-2
+_slidestr-5
+    parent=_area2-7
+
+@if phone
+_head-btn-2
+    tex=icon-setting0.png
+_head-btn-3
+    tex=icon-input0.png
+_head-btn-4
+    tex=icon-system0.png
+_head-btn-5
+    tex=icon-video0.png
+_head-btn-6
+    tex=icon-audio0.png
+_buttonstr-[1-12]
+    fsize={f2}
+@endif
+@if <1.44
+_slide-[1-5]
+    tex=ui-setting-bg2.png
+@endif

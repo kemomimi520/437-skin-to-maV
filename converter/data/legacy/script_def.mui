@@ -1,0 +1,25 @@
+@unit 1080
+
+@define p_title_y 150p
+@define p_list_w 833
+@define p_list_h 620
+@define p_item_h 133
+@define p_item_p 31
+@define p_btn_y 200
+
+@define f1 40
+@define f2 32
+@define f3 24
+
+@if phone
+@define p_title_y 84
+@define p_list_w 1370
+@define p_list_h 687
+@define p_item_h 194
+@define p_item_p 48
+@define p_btn_y 155
+
+@define f1 50
+@define f2 45
+@define f3 30
+@endif

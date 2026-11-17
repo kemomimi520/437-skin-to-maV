@@ -1,0 +1,474 @@
+@include script_edit_config.mui
+@include script_edit_pc.mui
+
+# overwrite default icon
+#_btnicon-1
+#	tex=edit-taiko-tool1.png
+	
+note-[1-7]
+	type=4
+	anchor=4
+	tex=taiko-notered-0.png
+	size=0,80
+	pos=992,0
+	pos2=0,0
+note-[2,4,6]
+	size=0,113.2
+note-2
+	tex=taiko-notered-big-0.png
+note-3
+	tex=taiko-noteblue-0.png
+note-4
+	tex=taiko-noteblue-big-0.png
+note-5
+	tex=taiko-noteyellow-0.png
+	tex2=taiko-renda.png
+	part=61px,122px
+note-6
+	tex=taiko-noteyellow-big-0.png
+	tex2=taiko-renda-big.png
+	part=96px,192px
+note-7
+	tex=taiko-noteorange-0.png
+	tex2=taiko-rendared.png
+	
+# tail sprite. pos is treated as a relative position to the main sprite
+note-7-tail
+	type=0
+	pos=0,0
+	size=0,106.7
+	tex=taiko-balloon-0.png
+	anchor=3
+	
+_edit
+	size=100%,100%
+	anchor=6
+	pos=0,0
+	zindex=1
+	etag=105
+	
+_thumb
+	size=100%,100%
+	anchor=6
+	pos=0,0
+	zindex=1
+	etag=105
+	
+_tracks
+	size=100%,100%
+	anchor=6
+	pos=0,88
+_track-[1-2]
+	anchor=3
+	size=100%,176
+	pos=_tracks 0,50%-88$176
+_trackarea-[1-2]
+	anchor=3
+	size=100%,116
+	pos=_tracks 0,50%-88$176
+_trackbg-[1-2]
+	tex=edit-taiko-track.png
+	zindex=-1
+	anchor=6
+	size=100%,176
+	pos=_tracks 0,50%
+_trackbg-1
+	flip=1
+	anchor=0
+_trackbg-2
+	show=0
+
+_thumb-dragarea
+	pos=_tracks 0,50%
+	size=100%,54
+	anchor=3
+	zindex=2
+	etag=105
+	tag=31
+	
+_judge-[1-2]
+	tex=edit-taiko-track-judge.png
+	size=0,110
+	anchor=4
+	pos=_track-1 300,0
+_judge-2
+	pos=_track-2 50%+80,0
+	show=0
+	
+_trackthumb-[1,2]
+	pos=_tracks 50%+80,50%-10.67$27
+_judgethumb-[1,2]
+	tex=edit-taiko-track-judgethumb.png
+	size=4,20
+	anchor=4
+	pos=_tracks 50%+80,50%-10.67$27
+_judgethumb-2
+	show=0
+
+_panel
+	anchor=7
+	pos=50%+80,0
+	zindex=40
+
+# single-step buttons
+_panel-step
+	type=5
+    tex=ui-edit-bg2.png
+    rect=3px,3px,4px,4px
+	parent=_panel
+	anchor=6
+	size=600,70
+	
+_panel-step-btn-[1-6]
+	parent=_panel-step
+	size=100,100%
+	anchor=6
+	pos=0$100,0
+	etag=104
+_panel-step-btn-1
+	tag=64
+_panel-step-btn-2
+	tag=65
+_panel-step-btn-3
+	tag=66
+_panel-step-btn-4
+	tag=67
+_panel-step-btn-5
+	tag=68
+_panel-step-btn-6
+	tag=69
+
+_panel-step-icon-[1-6]
+	parent=_panel-step
+	anchor=7
+	size=0,54
+	pos=50$100,8
+	etag=104
+_panel-step-icon-1
+	tag=64
+	tex=edit-taiko-btn-empty.png
+_panel-step-icon-2
+	tag=65
+	tex=edit-taiko-btn-reds.png
+#	tex=edit-taiko-btn-redl.png
+_panel-step-icon-3
+	tag=66
+	tex=edit-taiko-btn-blues.png
+#	tex=edit-taiko-btn-bluel.png
+_panel-step-icon-4
+	tag=67
+	tex=edit-taiko-btn-yellows.png
+#	tex=edit-taiko-btn-yellowl.png
+_panel-step-icon-5
+	tag=68
+	tex=edit-taiko-btn-balloon.png
+_panel-step-icon-6
+	tag=69
+	tex=edit-taiko-btn-bigger.png
+
+# tool menu
+_right-icon3-2
+	tex=edit-taiko-icon5.png
+	array=5px,3px,8px,6px,5px,4px,8px,7px
+	tag=60
+_right-icon3-3
+	tex=edit-taiko-icon10.png
+	array=10px,9px,12px,11px
+	tag=61
+_right-icon3-4
+	tex=edit-taiko-icon14.png
+	array=14px,13px
+	tag=62
+_right-icon3-5
+	tex=edit-taiko-icon2.png
+	array=2px,1px
+	tag=63
+_right-icon3-6
+    tex=ui-edit-icon20.png
+	tag=85
+_right-icon3-[2-6]
+    show=1
+_right-tip3-2
+	text=Don/Ka
+_right-tip3-3
+	text=Renda
+_right-tip3-4
+	text=Balloon
+_right-tip3-5
+	text=Size
+_right-tip3-6
+    text=More
+_right-tip3-[2-6]
+    show=1
+	
+_empty-9
+    size=1,20
+_infol-100
+	type=1
+	fsize={panelF}
+	lang=3049
+#	text=Bar Line Begin At
+_infoe-100
+	type=4
+	tex=g-input.png
+	part=10,50
+    size={listW},40
+_infot-100
+	type=1
+	fsize=20
+	size2=320,0
+	anchor=3
+    pos=10,26
+	text=Beat #765
+	etag=104
+	tag=70
+	parent=_infoe-100
+_infob-100
+	type=4
+	tex=g-dialogbtn.png
+	tex2=g-dialogbtn2.png
+	part=7,46
+	size={listW},40
+	etag=104
+	tag=70
+_infostr-100
+	type=1
+	parent=_infob-100
+	fsize=16
+	lang=3050
+#	text=Set from Current Beat
+	pos=50%,50%
+	
+_notethumb-long
+	type=4
+	tex=edit-taiko-thumb-yellows.png
+	part=9px,11px
+	size=18,18
+	anchor=4
+	pos=_judgethumb-1 8.5,0
+_notethumb-normal
+	tex=edit-taiko-thumb-reds.png
+	size=18,18
+	anchor=4
+	pos=_judgethumb-1 0,0
+	
+_note-hitnumber
+	pos=100,0
+
+_area-noteselectsize-1
+	size=60,0
+_area-noteselectsize-2
+	size=94,0
+
+_gridline-onbeat
+	tex=edit-taiko-dot.png
+	anchor=4
+	pos=_track-1 0,0
+	size=0,18
+_gridline-offbeat
+	tex=edit-taiko-dot.png
+	anchor=4
+	pos=_track-1 50,0
+	size=0,12
+_gridline-bar
+	tex=edit-taiko-barline.png
+	pos=_track-1 100,0
+	size=0,126
+	anchor=4
+_gridline-thumb
+	tex=edit-taiko-barline-thumb.png
+	opacity=170
+	pos=_trackthumb-1 50,0
+	zindex=-1
+	size=2,20
+
+_select-mark-[1-2]
+	tex=ui-edit-upload1.png
+	anchor=0
+	size=0,40
+	pos=-7,10
+_select-mark-2
+	pos=0,-10
+	
+_number-balloon
+	anchor=4
+	frame=font-taiko/0-9
+	fsize=28
+	pos2=0.7px,0
+	type2=1
+
+_numberpanel
+	size=100%,100%
+	anchor=6
+	pos=0,0
+	zindex=49
+	etag=104
+	tag=71
+	show=0
+_numberpanel-bg
+	type=5
+	tex=g-rightbg.png
+	rect=20px,144px,40px,80px
+	size2=0,1080px
+	anchor=5
+	size={panelW},100%-40
+	pos=100%,50%
+	parent=_numberpanel
+	etag=-2
+_numberpanel-list
+	type=101
+	size={listW},100%-60
+	size2=0,4
+	anchor=5
+	pos=100%-15,50%
+	parent=_numberpanel
+	etag=104
+_numberpanel-text
+	type=1
+	fsize={panelF}
+	lang=3051
+#	text=Number of Hits
+	parent=_numberpanel-list
+_numberpanel-inputbg
+	type=4
+	tex=g-input.png
+	part=10,50
+	size=340,40
+	parent=_numberpanel-list
+_numberpanel-input
+	type=105
+	fsize=20
+	size=310,40
+	tex=g-inputbar.png
+	size2=0,35
+	anchor=3
+	pos=10,20
+	etag=104
+	tag=72
+	parent=_numberpanel-inputbg
+_numberpanel-icon
+	size=340,90
+	parent=_numberpanel-list
+	
+@if phone
+
+note-[1-7]
+	size=0,100
+	pos=1240,0
+note-[2,4,6]
+	size=0,141.5
+	
+note-7-tail
+	size=0,133.4
+	
+_tracks
+	size=100%,100%
+	pos=0,0
+_track-[1-2]
+	pos=_tracks 0,50%
+	size=100%,220
+_trackarea-[1-2]
+	size=100%,145
+	pos=_tracks 0,50%
+_trackbg-[1-2]
+	flip=1
+	anchor=3
+	size=100%,220
+	pos=_tracks 0,50%
+_trackbg-2
+	show=0
+
+_thumb-dragarea
+	pos=_tracks 0,50%+115
+	size=100%,67.5
+	
+_judge-[1-2]
+	pos=_track-1 320,0
+	size=0,137.5
+_judge-2
+	pos=_track-2 50%+50,0
+	show=0
+
+_trackthumb-[1,2]
+	pos=_tracks 50%+50,50%+96.67
+_judgethumb-[1,2]
+	tex=edit-taiko-track-judgethumb.png
+	size=5,25
+	anchor=4
+	pos=_tracks 50%+50,50%+96.67
+_judgethumb-2
+	show=0
+
+_notethumb-normal
+	size=22.5,22.5
+	pos=_judgethumb-1 0,0
+_notethumb-long
+	size=22.5,22.5
+	pos=_judgethumb-1 10.5,0
+	
+_panel
+	pos=50%+50,0
+_panel-step
+	size=540,220
+_panel-step-btn-[2-3]
+	size=180,110
+	pos=0,0$110
+_panel-step-btn-[4-5]
+	size=180,110
+	pos=180,0$110
+_panel-step-btn-[1,6]
+	size=180,110
+	pos=360,0$110
+_panel-step-icon-[2-3]
+	size=0,94
+	pos=90,8$110
+_panel-step-icon-[4-5]
+	size=0,94
+	pos=270,8$110
+_panel-step-icon-[1,6]
+	size=0,94
+	pos=450,8$110
+	
+_note-hitnumber
+	pos=125,1
+	
+_area-noteselectsize-1
+	size=72,0
+_area-noteselectsize-2
+	size=118,0
+	
+_gridline-onbeat
+	size=0,24
+_gridline-offbeat
+	size=0,16
+_gridline-bar
+	size=0,157.5
+#	pos=_track-1 100,-1
+_gridline-thumb
+	size=2.5,25
+
+_infoe-100
+    size={listW},70
+_infot-100
+    fsize=36
+    pos=20,46
+    size2=520,0
+_infob-100
+	size={listW},70
+_infostr-100
+	fsize=36
+	pos=263,35
+	
+_number-balloon
+	fsize=35
+	
+_numberpanel-inputbg
+	size=530,70
+_numberpanel-input
+	fsize=36
+	size=520,50
+	size2=0,42
+	pos=20,35
+_numberpanel-icon
+	size=530,120
+@endif

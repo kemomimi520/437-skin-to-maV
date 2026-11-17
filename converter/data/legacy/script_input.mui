@@ -1,0 +1,80 @@
+@unit 1080
+
+@if phone
+@unit 720
+@endif
+_bg
+    size=100%,100%
+    anchor=6
+    etag=131
+    tag=2
+_bg2
+    type=5
+    tex=g-rightbg.png
+    rect=20px,144px,40px,80px
+    size=1070,168
+    size2=0,1080px
+    anchor=4
+    pos=50%,100%-200
+_bg-input
+    type=4
+    tex=ui-chat-bg3.png
+    part=24px,78px
+    size=800,84
+    anchor=3
+    pos=50%-515,100%-200
+    zindex=1
+_input
+    type=105
+    fsize=27
+    anchor=3
+    pos=_bg-input 20,0
+    size=_bg-input -60,-20
+    tex=g-inputbar.png
+    size2=0,41
+    etag=131
+    tag=3
+    zindex=5
+_btn
+    type=4
+    tex=g-dialogbtn.png
+    tex2=g-dialogbtn2.png
+    part=7,46
+    size=200,72
+    anchor=3
+    pos=_bg-input 820,0
+    hover=g-dialogbtn2.png
+    leave=g-dialogbtn.png
+    etag=131
+    tag=1
+_btntext
+    type=1
+    fsize=32
+    anchor=4
+    pos=100,36
+    parent=_btn
+
+@if phone
+_bg2
+    pos=50%,100%-100
+_bg-input
+    size=800,84
+    pos=50%-515,100%-100
+_input
+    fsize=36
+    pos=_bg-input 20,0
+    size=_bg-input -60,-20
+_btn
+    pos=_bg-input 820,0
+@endif
+
+@if <1.4
+_bg2
+    size=1050,168
+_bg-input
+    size=780,84
+    pos=50%-500,100%-200
+_input
+    pos=_bg-input 20,0
+    size=_bg-input -60,-20
+@endif

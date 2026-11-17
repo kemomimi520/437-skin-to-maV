@@ -1,0 +1,322 @@
+@apply soundend
+@define ring 360
+@if 1.4
+@unit 672
+@define ring 336
+@endif
+@if 1.65
+@unit 576
+@define ring 288
+@endif
+@if 1.95
+@unit 536
+@define ring 286
+@endif
+#
+:ani-press-1
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=100,atime=(-1800,-1500)
+    name=move,from=(50%-280,{ring}-30),to=(50%-353.6,{ring}+131.6),atime=(-1450,-1100)
+#
+:ani-press-23
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=100,atime=(-1800,-1500)
+#
+:ani-press-4
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=100,atime=(-1800,-1500)
+    name=move,from=(50%-280,{ring}-30),to=(50%-353.6,{ring}-191.6),atime=(-1450,-1100)
+#
+:ani-press-5
+    name=r,from=0,to=-360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=100,atime=(-1800,-1500)
+    name=move,from=(50%+280,{ring}-30),to=(50%+353.6,{ring}-191.6),atime=(-1450,-1100)
+#
+:ani-press-67
+    name=r,from=0,to=-360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=100,atime=(-1800,-1500)
+#
+:ani-press-8
+    name=r,from=0,to=-360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=100,atime=(-1800,-1500)
+    name=move,from=(50%+280,{ring}-30),to=(50%+353.6,{ring}+131.6),atime=(-1450,-1100)
+#
+:press-a
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=100,atime=(-1100,-1000)
+#
+:press-a2
+    name=r,from=0,to=-360,atime=(-2000,0),repeat=999999
+    name=f,from=0,to=100,atime=(-1100,-1000)
+#
+:rota
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+#
+:rota2
+    name=r,from=0,to=-360,atime=(-2000,0),repeat=999999
+#
+:rota3
+    name=r,from=0,to=360,atime=(-2000,6000),repeat=999999
+#
+:rota4
+    name=r,from=0,to=-360,atime=(-2000,6000),repeat=999999
+#
+:rotb
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=size,from=(204,204),to=(225,225),atime=(-2000,-1800),repeat=(999999,200)
+    name=size,from=(225,225),to=(204,204),atime=(-1800,-1600),repeat=(999999,200)
+#
+:rotb2
+    name=r,from=0,to=-360,atime=(-2000,0),repeat=999999
+    name=size,from=(204,204),to=(225,225),atime=(-2000,-1800),repeat=(999999,200)
+    name=size,from=(225,225),to=(204,204),atime=(-1800,-1600),repeat=(999999,200)
+#
+:rotc
+    name=r,from=0,to=-360,atime=(-2000,0),repeat=999999
+    name=f,from=10,to=50,atime=(-1000,-400),repeat=(999999,600)
+    name=f,from=50,to=10,atime=(-400,200),repeat=(999999,600)
+#
+:rotc2
+    name=r,from=0,to=360,atime=(-2000,0),repeat=999999
+    name=f,from=10,to=50,atime=(-1000,-400),repeat=(999999,600)
+    name=f,from=50,to=10,atime=(-400,200),repeat=(999999,600)
+#####
+press-[1-8]
+    anchor=4
+    frame=ring-hitpointpressed/0-0.png
+    size=160,160
+    pos=50%-353.6,{ring}+131.6
+    zindex=6
+    opacity=0
+press-[2,3,6,7]
+    frame=ring-hitpointmiddlepressed/0-0.png
+press-[2,3]
+    pos=50%-280,{ring}-30
+press-4
+    pos=50%-353.6,{ring}-191.6
+press-8
+    pos=50%+353.6,{ring}+131.6
+press-[6,7]
+    pos=50%+280,{ring}-30
+press-5
+    pos=50%+353.6,{ring}-191.6
+press-[5-8]
+    flip=0
+press-[1,2,4]
+    motion=press-a
+press-[5,7,8]
+    motion=press-a2
+_press-[1-8]
+    anchor=4
+    tex=ring-hitpoint-0.png
+    size=160,160
+    pos=50%-280,{ring}-30
+    zindex=5
+    opacity=0
+_press-[2,3,6,7]
+    tex=ring-hitpointmiddle-0.png
+_press-[5-8]
+    pos=50%+280,{ring}-30
+_press-1
+    motion=ani-press-1
+_press-2
+    motion=ani-press-23
+_press-4
+    motion=ani-press-4
+_press-5
+    motion=ani-press-5
+_press-7
+    motion=ani-press-67
+_press-8
+    motion=ani-press-8
+_press-[5-8]
+    flip=0
+_pre-[1-8]
+    anchor=4
+    tex=ring-hitpointcircle.png
+    size=128,128
+    zindex=7
+    opacity=0
+_pre-1
+    pos=press-1 0,0
+_pre-2
+    pos=press-2 0,0
+_pre-3
+    pos=press-3 0,0
+_pre-4
+    pos=press-4 0,0
+_pre-5
+    pos=press-5 0,0
+_pre-6
+    pos=press-6 0,0
+_pre-7
+    pos=press-7 0,0
+_pre-8
+    pos=press-8 0,0
+_pre-[5-8]
+    flip=0
+_pre-[1,2,4]
+    motion=rotc
+_pre-[5,7,8]
+    motion=rotc2
+note-[1-8]
+    type=2
+    anchor=4
+    tex=ring-note.png
+    tex2=ring-longobject.png
+    tex3=ring-noteend.png
+    tex4=ring-notedouble.png
+    size=60.8,60.8
+    size2=81.6,81.6
+    pos=50%,{ring}+194
+    toggle=1+2
+note-[3,4,5,6]
+    pos=50%,{ring}-254
+note-[2,3,6,7]
+    tex=ring-notemiddle.png
+note-1
+    pos2=press-1 0,0
+note-2
+    pos2=press-2 0,0
+note-3
+    pos2=press-3 0,0
+note-4
+    pos2=press-4 0,0
+note-5
+    pos2=press-5 0,0
+note-6
+    pos2=press-6 0,0
+note-7
+    pos2=press-7 0,0
+note-8
+    pos2=press-8 0,0
+_cover-[1-4]
+    motion=rota
+    anchor=4
+    tex=ring-startpoint.png
+    size=57.6,57.6
+    pos=50%,{ring}+194
+    zindex=9
+_cover-2
+    motion=rota2
+    pos=50%,{ring}-254
+_cover-3
+    motion=rota3
+_cover-4
+    motion=rota4
+    pos=50%,{ring}-254
+hit-[1-8]
+    motion=rotb
+    anchor=4
+    frame=ring-hitp/1-15
+    frame2=ring-hitp/3-8
+    frame3=ring-hitp/1-15
+    size=240,240
+    zindex=21
+    interval=20
+    blend=1
+hit-1
+    pos=press-1 0,0
+hit-2
+    pos=press-2 0,0
+hit-3
+    pos=press-3 0,0
+hit-4
+    pos=press-4 0,0
+hit-5
+    pos=press-5 0,0
+hit-6
+    pos=press-6 0,0
+hit-7
+    pos=press-7 0,0
+hit-8
+    pos=press-8 0,0
+hit-[5-8]
+    flip=0
+    motion=rotb2
+judge-1
+    type=1
+    anchor=4
+    frame=ui-play-score/0-3
+    size=192,64
+    zindex=20
+    interval=300
+    blend=1
+    pos=50%,{ring}-30
+hit-fast
+    anchor=4
+    frame=ring-hit-slow/0-0
+    size=52.8,65.6
+    pos=50%-102,{ring}-27.6
+    zindex=21
+    interval=250
+    color=#F06868
+    flip=0
+hit-slow
+    anchor=4
+    frame=ring-hit-slow/0-0
+    size=52.8,65.6
+    pos=50%+102,{ring}-27.6
+    zindex=21
+    interval=250
+    color=#F06868
+score-combo
+    anchor=4
+    type=0
+    frame=font-combo/0-9
+    fsize=40
+    pos=50%,{ring}+18
+    pos2=0.9px,0
+    zindex=35
+    color=#7ED8F3
+touch
+    type=10
+    array=3,50%-177.6,{ring}+131.6,50%-441.6,{ring}+283.6,50%-441.6,{ring}-20.4
+    array2=3,50%-456,{ring}-30,50%-192,{ring}+122,50%-192,{ring}-182
+    array3=3,50%-456,{ring}-30,50%-192,{ring}+122,50%-192,{ring}-182
+    array4=3,50%-177.6,{ring}-232,50%-441.6,{ring}-42,50%-441.6,{ring}-343.6
+    array8=3,50%+177.6,{ring}+131.6,50%+441.6,{ring}+283.6,50%+441.6,{ring}-20.4
+    array7=3,50%+456,{ring}-30,50%+192,{ring}+122,50%+192,{ring}-182
+    array6=3,50%+456,{ring}-30,50%+192,{ring}+122,50%+192,{ring}-182
+    array5=3,50%+177.6,{ring}-232,50%+441.6,{ring}-42,50%+441.6,{ring}-343.6
+@unit 720
+score-acc
+    anchor=4
+    type=0
+    frame=font-number/0-11
+    fsize=40
+    pos=50%,702
+    pos2=0.6px,0
+    zindex=35
+    color=#7ED8F3
+@if 1.95
+    anchor=3
+    pos=50%+20,702
+@endif
+score-score
+    anchor=4
+    type=0
+    frame=font-number/0-9
+    fsize=40
+    pos=50%,674
+    pos2=0.6px,0
+    zindex=35
+    color=#7ED8F3
+@if 1.95
+    anchor=5
+    pos=50%-20,702
+@endif
+score-hp
+    type=0
+	   type2=1
+	   tex=ui-play-hp1.png
+    pos=100%-12,100%-23.5
+    anchor=5
+    size=312.6,18.6
+    zindex=102
+_hp-bg
+    tex=ui-play-hp0.png
+    anchor=2
+    pos=100%,100%-6
+    size=0,36
+	   zindex=101

@@ -1,0 +1,96 @@
+
+_fixed
+    anchor=4
+    tex=bga-fixed.png
+    size=923.33,923.33
+    pos=50%+311.67,128.33
+    zindex=10
+:bg-0
+    name=rotate,from=0,to=360,time=2571.43,repeat=-1,trans=(0.42,0,0.58,1.0)
+_bg-0
+    motion=bg-0
+    anchor=4
+    tex=bga-0.png
+    size=265,265
+    pos=_fixed 0,0
+    zindex=11
+:bg-1
+    name=rotate,from=0,to=360,time=3600,repeat=-1,trans=(0.42,0,0.58,1.0)
+_bg-1
+    motion=bg-1
+    anchor=4
+    tex=bga-1.png
+    size=923.33,923.33
+    pos=_fixed 0,0
+    zindex=12
+:bg-2
+    name=rotate,from=0,to=-360,time=7200,repeat=-1,trans=(0.42,0,0.58,1.0)
+_bg-2
+    motion=bg-2
+    anchor=4
+    tex=bga-2.png
+    size=707,707
+    pos=_fixed 0,0
+    zindex=13
+:bg-3
+    name=size,from=(738.67,738.67),to=(1061.83,1061.83),time=3000,repeat=(-1,3000),trans=(0.42,0,0.58,1.0)
+    name=size,from=(1061.83,1061.83),to=(738.67,738.67),time=(3000,6000),repeat=(-1,3000),trans=(0.42,0,0.58,1.0)
+    name=rotate,from=0,to=-480,time=3000,repeat=(-1,3000),trans=(0.42,0,0.58,1.0)
+    name=rotate,from=-480,to=-1080,time=(3000,6000),repeat=(-1,3000),trans=(0.42,0,0.58,1.0)
+_bg-3
+    motion=bg-3
+    anchor=4
+    tex=bga-3.png
+    size=923.33,923.33
+    pos=_fixed 0,0
+    zindex=14
+:bg-4
+    name=rotate,from=0,to=360,time=72000,repeat=-1
+_bg-4
+    motion=bg-4
+    anchor=4
+    tex=bga-4.png
+    size=923.33,923.33
+    pos=_fixed 0,0
+    zindex=15
+#
+:lightbar-1
+    name=f,from=0,to=10,time=2000,repeat=(-1,2000),trans=(0.25,0.1,0.25,1.0)
+    name=f,from=10,to=0,time=(2000,4000),repeat=(-1,2000),trans=(0.25,0.1,0.25,1.0)
+    name=size,from=(10%,720),to=(5%,720),time=4000,repeat=-1,trans=(0.25,0.1,0.25,1.0)
+    name=movex,from=15%,to=82.5%,time=4000,repeat=-1,trans=(0.25,0.1,0.25,1.0)
+:lightbar-2
+    name=f,from=0,to=10,time=3000,repeat=(-1,3000),trans=(0.25,0.1,0.25,1.0)
+    name=f,from=10,to=0,time=(3000,6000),repeat=(-1,3000),trans=(0.25,0.1,0.25,1.0)
+    name=size,from=(13%,720),to=(3%,720),time=6000,repeat=-1,trans=(0.25,0.1,0.25,1.0)
+    name=movex,from=76.5%,to=1.5%,time=6000,repeat=-1,trans=(0.25,0.1,0.25,1.0)
+:lightbar-3
+    name=f,from=0,to=10,time=2750,repeat=(-1,2750),trans=(0.25,0.1,0.25,1.0)
+    name=f,from=10,to=0,time=(2750,5500),repeat=(-1,2750),trans=(0.25,0.1,0.25,1.0)
+    name=size,from=(10%,720),to=(5%,720),time=5500,repeat=-1,trans=(0.25,0.1,0.25,1.0)
+    name=movex,from=15%,to=82.5%,time=5500,repeat=-1,trans=(0.25,0.1,0.25,1.0)
+:lightbar-4
+    name=f,from=0,to=10,time=3500,repeat=(-1,3500),trans=(0.25,0.1,0.25,1.0)
+    name=f,from=10,to=0,time=(3500,7000),repeat=(-1,3500),trans=(0.25,0.1,0.25,1.0)
+    name=size,from=(13%,720),to=(3%,720),time=7000,repeat=-1,trans=(0.25,0.1,0.25,1.0)
+    name=movex,from=76.5%,to=1.5%,time=7000,repeat=-1,trans=(0.25,0.1,0.25,1.0)
+:lightbar-5
+    name=movey,from=97.5%,to=-2.5%,time=5000,repeat=-1
+_lightbar-[1-5]
+    motion=lightbar-1
+    anchor=4
+    tex=bga-lightbar.png
+    size=100%,720
+    pos=50%,360
+    zindex=5
+    opacity=0
+_lightbar-2
+    motion=lightbar-2
+_lightbar-3
+    motion=lightbar-3
+_lightbar-4
+    motion=lightbar-4
+_lightbar-5
+    motion=lightbar-5
+    opacity=10
+    size=100%,36

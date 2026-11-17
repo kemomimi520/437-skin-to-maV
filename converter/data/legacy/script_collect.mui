@@ -1,0 +1,132 @@
+@unit 1080
+@include script_def.mui
+
+_head-t
+    type=1
+    lang=925
+    fsize=50
+    anchor=4
+    pos=50%,100%-{p_title_y}
+    zindex=2
+_list
+    type=101
+    size={p_list_w},{p_list_h}
+    anchor=4
+    pos=50%,50%+20
+    tex=g-empty.png
+    size3=0,100
+_scroll
+    tex=g-scroll.png
+    size=2,{p_list_h}
+    anchor=5
+    pos=50%+428,50%+20
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
+_button-[1,2]
+    type=4
+    tex=g-dialogbtn.png
+    tex2=g-dialogbtn2.png
+    part=7,46
+    size=220,68
+    anchor=1
+    pos=50%-120$240,{p_btn_y}
+    etag=133
+    tag=1$1
+    hover=g-dialogbtn2.png
+    press=g-dialogbtn2.png
+    leave=g-dialogbtn.png
+    release=g-dialogbtn.png
+_buttonstr-[1,2]
+    type=1
+    fsize=32
+    anchor=4
+    pos=110,34
+_buttonstr-1
+    lang=113
+    parent=_button-1
+_buttonstr-2
+    lang=1020
+    parent=_button-2
++itemadd
+_itemadd
+    size={p_list_w},{p_item_h}+{p_item_p}
+_itemaddbg
+    type=4
+    tex=ui-chart-bg3.png
+    part=20,60
+    size={p_list_w},{p_item_h}
+    anchor=6
+    pos=0,{p_item_p}
+    parent=_itemadd
+_itemadd-title
+    type=1
+    lang=140
+    fsize={f2}
+    anchor=6
+    parent=_itemadd
+    pos=44,47+31
+    zindex=2
++item
+_item
+    size={p_list_w},{p_item_h}+{p_item_p}
+_itembg
+    type=4
+    tex=ui-chart-bg3.png
+    part=20,60
+    size={p_list_w},{p_item_h}
+    anchor=6
+    pos=0,{p_item_p}
+    parent=_item
+_item-title
+    type=1
+    fsize={f2}
+    size2={p_list_w}-200,0
+    anchor=6
+    parent=_item
+    pos=44,70+31
+    zindex=2
+    tag=1
+_item-desc
+    type=1
+    fsize={f3}
+    size2={p_list_w}-70,0
+    anchor=6
+    parent=_item
+    pos=_item-title 0,-42
+    zindex=2
+    tag=2
+_item-icon-[1,2]
+    tex=icon-del.png
+    size=0,50
+    anchor=5
+    pos={p_list_w}-32$-70,94
+    parent=_item
+    etag=133
+    tag=3$1
+_item-icon-2
+    tex=icon-edit0.png
+
+@if phone
+_button-[1,2]
+    size=363,104
+    pos=50%-190$380,{p_btn_y}
+_buttonstr-[1,2]
+    fsize=45
+    pos=181.5,52
+_scroll
+    pos=50%+695,50%+20
+_item-title
+    pos=44,140
+    size2={p_list_w}-250,0
+_item-desc
+    pos=_item-title 0,-50
+_item-icon-[1,2]
+    size=0,70
+    pos={p_list_w}-32$-100,134
+_itemadd-title
+    pos=44,110
+@endif

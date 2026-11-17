@@ -1,0 +1,32 @@
+#ifdef GL_ES
+precision lowp float;
+#endif
+
+uniform vec2 u_blurRadius;
+uniform float u_gaussianKernel[11];
+
+varying vec2 v_texcoord;
+
+vec3 sampleColorAtRadius(float radius, vec2 texCoord)
+{
+	vec2 coord = texCoord + radius * u_blurRadius;
+	return texture2D(CC_Texture0, coord).rgb;// * float(coord.x > 0. && coord.y > 0. && coord.x < 1. && coord.y < 1.);
+}
+
+void applyBlurFilter(inout vec3 color, vec2 texCoord)
+{
+	vec3 total = sampleColorAtRadius(0., texCoord) * u_gaussianKernel[0];
+	for (int i = 1; i < 11; i++) {
+		total += sampleColorAtRadius(float(i) * 0.2, texCoord) * u_gaussianKernel[i];
+		total += sampleColorAtRadius(float(-1 * i) * 0.2, texCoord) * u_gaussianKernel[i];
+	}
+
+	color = total;
+}
+
+void main(){
+    vec3 color = vec3(1., 1., 1.);
+    applyBlurFilter(color, v_texcoord);
+    //gl_FragColor = texture2D(CC_Texture0, v_texcoord.st);
+    gl_FragColor = vec4(color, 1.0);
+}

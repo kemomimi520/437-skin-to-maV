@@ -1,0 +1,516 @@
+@include script_sub_head.mui
+#@include script_temp.mui
+@unit 1080
+
+_head-t
+    lang=921
+_head-back
+    etag=129
+    tag=1
+_head-btn-2
+    tex=icon-mod.png
+    size=0,69
+    anchor=5
+    etag=129
+    parent=_head
+    pos=100%-28-{ipx},50%+8
+    tag=2
+    zindex=2
+_head-btn-3
+    tex=icon-level.png
+    size=0,39
+    anchor=5
+    parent=_head
+    pos=100%-188-{icon_p}-{ipx},50%+10
+    etag=129
+    tag=3
+    zindex=2
+_head-btn3str
+    type=1
+    fsize={f3}
+    anchor=3
+    pos=_head-btn-3 5,0
+    parent=_head
+    etag=129
+    tag=3
+    zindex=10
+_head-btn-[4,5]
+    tex=icon-edit.png
+    size=0,69
+    anchor=3
+    parent=_head
+    pos=98+{icon_p}+{ipx}$78+{icon_p},50%+8
+    etag=129
+    tag=4
+    zindex=2
+_head-btn-5
+    tex=icon-collect.png
+    tag=8
+_line-1
+    tex=ui-chart-line0.png
+    size=0,252
+    anchor=0
+    pos=25+{ipx},100%-140
+_line-2
+    tex=ui-chart-line1.png
+    size=0,82
+    anchor=0
+    pos=396+{ipx},281
+_line-3
+    tex=ui-song-bg4.png
+    size=0,455
+    anchor=4
+    pos=295+{ipx},484
+    zindex=1
+_code-[1,2]
+    type=3
+    frame=code/0-28
+    interval=120
+    size=0,30
+    flip=2
+    anchor=6
+_code-1
+    pos=378+{ipx},835
+_code-2
+    interval=180
+    pos=610+{ipx},204
+_tachie
+    anchor=4
+    size=0,750
+    pos=300+{ipx},450
+    zindex=5
+_title
+    type=1
+    fsize={f2}
+    size2=640,0
+    anchor=6
+    pos=100+{ipx},100%-203
+    zindex=11
+#chart
+_scroll-1
+    tex=g-scroll.png
+    size=2,820
+    anchor=7
+    pos=100%-607,70
+_scrollbar-1
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll-1
+    pos=2,0
+list_
+    size=506,820
+    pos=_scroll-1 -33,0
+    anchor=8
+    zindex=10
++item1
+_item1
+    size=506,68+23
+_item1-bg
+    type=4
+    tex=ui-song-bg5.png
+    part=20,130
+    size=506,68
+    anchor=6
+    pos=0,10
+    parent=_item1
+    tag=4
+_item1-mode
+    tex=mode0.png
+    size=0,32
+    anchor=3
+    parent=_item1
+    pos=34,34+10
+    zindex=2
+    tag=2
+_item1-title
+    type=1
+    fsize={f3}
+    size2=360,0
+    anchor=3
+    parent=_item1
+    pos=76,41+10
+    zindex=3
+    tag=1
+_item1-status
+    tex=ui-chart-status.png
+    size=0,32
+    anchor=4
+    parent=_item1
+    pos=100%-34,34+10
+    tag=3
+    zindex=2
++item2
+_item2
+    size=677,195
+    anchor=8
+    pos=506,415
+    zindex=99
+_item2-bg
+    type=4
+    tex=g-diffbg.png
+    part=20,150
+    size=677,195
+    anchor=6
+    pos=0,0
+    parent=_item2
+_item2-bg-2
+    tex=g-scorebg0.png
+    size=0,184
+    anchor=4
+    parent=_item2
+    pos=102,50%
+    zindex=2
+_item2-bg-3
+    tex=g-scorebg1.png
+    size=0,131
+    anchor=4
+    parent=_item2
+    pos=_item2-bg-2 0,0
+    zindex=3
+    tag=1
+_item2-level
+    tex=icon-rank0.png
+    size=0,66
+    anchor=4
+    parent=_item2
+    pos=_item2-bg-2 0,0
+    zindex=4
+    tag=2
+_item2-mode
+    tex=mode0.png
+    size=0,50
+    anchor=3
+    pos=209,149
+    parent=_item2
+    zindex=2
+    tag=3
+_item2-title
+    type=1
+    fsize={f2}
+    size2=380,0
+    anchor=3
+    pos=_item2-mode 57,8
+    parent=_item2
+    zindex=5
+    tag=4
+_item2-creator
+    type=1
+    fsize={f3}
+    anchor=6
+    color=#A4A4A4
+    pos=_item2-mode 0,-64
+    parent=_item2
+    zindex=5
+    tag=5
+_item2-meta
+    type=1
+    fsize={f3}
+    anchor=6
+    pos=209,20
+    parent=_item2
+    zindex=5
+    tag=6
+_item2-status
+    type=1
+    fsize={f3}
+    anchor=8
+    parent=_item2
+    pos=100%-19,20
+    zindex=5
+    tag=7
++
+#rank area
+_toggle-[1,2]
+    tex=ui-chart-icon0.png
+    size=0,48
+    anchor=8
+    pos=100%-60$-50,100%-189
+    etag=129
+    tag=6$1
+_toggle-2
+    tex=ui-chart-icon1.png
+_title-[2,3]
+    type=1
+    fsize={f3}
+    lang=129
+    anchor=6
+    pos=100%-543,100%-190$-290
+    zindex=11
+_title-3
+    lang=128
+_scroll-2
+    tex=g-scroll.png
+    size=2,526
+    anchor=7
+    pos=100%-29,70
+_scrollbar-2
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll-2
+    pos=2,0
+_list-[2,3]
+    type=101
+    tex=g-empty.png
+    size3=0,100
+    size=480,526
+    pos=_scroll-2 -33,0
+    anchor=8
+_self-[1,2]
+    type=4
+    tex=ui-chart-bg2.png
+    part=20,60
+    size=480,232
+    anchor=0
+    pos=100%-543,100%-189
+_self-title-1
+    type=1
+    fsize={f3}
+    text=RANK
+    anchor=4
+    pos=76,164
+    parent=_self-1
+_self-rank
+    type=1
+    fsize={f1}
+    text=123
+    anchor=4
+    pos=75,130
+    parent=_self-1
+_self-title-[2,3]
+    type=1
+    fsize={f3}
+    anchor=6
+    pos=52,20
+    parent=_self-1
+    color=#999999
+_self-title-2
+    text=Score
+_self-title-3
+    text=Acc.
+    pos=302,20
+_self-score
+    type=1
+    fsize={f2}
+    anchor=6
+    pos=52+50,15
+    parent=_self-1
+_self-acc
+    type=1
+    fsize={f2}
+    anchor=6
+    pos=302+35,15
+    parent=_self-1
+_self-name
+    type=1
+    fsize={f1}
+    size2=180,0
+    anchor=0
+    pos=154,220
+    parent=_self-1
+_self-time
+    type=1
+    color=#999999
+    fsize={f3}
+    anchor=0
+    pos=_self-name 0,-58
+    parent=_self-1
+_self-mod
+    size=0,50
+    anchor=0
+    pos=_self-name 0,-95
+    parent=_self-1
+_self-levelbg
+    tex=ui-chart-level.png
+    size=0,63
+    anchor=4
+    parent=_self-1
+    pos=100%-37,130
+_self-level
+    tex=icon-rank0.png
+    size=0,30
+    anchor=4
+    pos=_self-levelbg 0,0
+    parent=_self-1
+_self-empty
+    tex=g-empty.png
+    anchor=4
+    parent=_self-2
+    pos=50%,50%
+    size=0,100
+_self-2
+    show=0
++item3
+_item3
+    size=480,81+28
+_item3-bg
+    type=4
+    tex=ui-chart-bg3.png
+    part=20,60
+    size=480,81
+    anchor=6
+    pos=0,28
+    parent=_item3
+_item3-num
+    type=1
+    fsize={f2}
+    anchor=4
+    parent=_item3
+    pos=48,40.5+28
+    tag=1
+    zindex=5
+_item3-avatar
+    type=102
+    tex=g-avatar.png
+    size2=62,62
+    type2=1
+    anchor=4
+    parent=_item3
+    pos=120,40.5+28
+    tag=2
+    zindex=5
+_item3-name
+    type=1
+    fsize={f3}
+    size2=160,0
+    anchor=6
+    parent=_item3
+    pos=162,44+28
+    tag=3
+    zindex=5
+_item3-sub
+    type=1
+    fsize={f3}
+    anchor=6
+    parent=_item3
+    pos=162,7+28
+    color=#999999
+    tag=4
+    zindex=5
+_item3-levelbg
+    tex=ui-chart-level.png
+    size=0,63
+    anchor=4
+    parent=_item3
+    pos=100%-37,40.5+28
+    tag=5
+_item3-level
+    tex=icon-rank0.png
+    size=0,30
+    anchor=4
+    pos=_item3-levelbg 0,0
+    parent=_item3
+    tag=6
+_item3-num-[2,3]
+    type=1
+    fsize={f3}
+    anchor=8
+    parent=_item3
+    pos=100%-76,46+20$-35
+    tag=7$1
+    zindex=5
++item4
+_item4
+    size=480,81+28
+_item4-bg
+    type=4
+    tex=ui-chart-bg3.png
+    part=20,60
+    size=480,81
+    anchor=6
+    pos=0,28
+    parent=_item4
+_item4-num
+    type=1
+    fsize={f2}
+    anchor=4
+    parent=_item4
+    pos=48,40.5+28
+    tag=1
+    zindex=5
+_item4-name
+    type=1
+    fsize={f3}
+    size2=160,0
+    anchor=6
+    parent=_item4
+    pos=82,44+28
+    tag=3
+    zindex=5
+_item4-sub
+    size=100,{f3}+8
+    anchor=6
+    parent=_item4
+    pos=82,7+28
+    tag=4
+_item4-levelbg
+    tex=ui-chart-level.png
+    size=0,63
+    anchor=4
+    parent=_item4
+    pos=100%-37,40.5+28
+    tag=5
+_item4-level
+    tex=icon-rank0.png
+    size=0,30
+    anchor=4
+    pos=_item4-levelbg 0,0
+    parent=_item4
+    tag=6
+_item4-num-[2,3]
+    type=1
+    fsize={f3}
+    anchor=8
+    parent=_item4
+    pos=100%-76,46+20$-35
+    tag=7$1
+    zindex=5
+
+@if phone
+_self-score
+    pos=52+62,17
+_self-acc
+    pos=302+48,17
+_self-time
+    pos=_self-name 0,-62
+_item1-mode
+    size=0,40
+_item3-sub
+    pos=162,3+28
+_head-btn-2
+    tex=icon-mod0.png
+_head-btn-4
+    tex=icon-edit0.png
+_head-btn-5
+    tex=icon-collect0.png
+_toggle-1
+    size=0,80
+    parent=_head
+    anchor=5
+    pos=100%-280-{ipx},50%+8
+    zindex=2
+_toggle-2
+    show=0
+@endif
+
+@if <1.44
+_scroll-1
+    pos=100%-550,50
+list_
+    pos=_scroll-1 -15,0
+_title-1
+    pos=100%-1071,100%-190
+_title-[2,3]
+    pos=100%-523,100%-190$-290
+_self-[1,2]
+    pos=100%-523,100%-189
+_scroll-2
+    size=2,546
+    pos=100%-29,50
+_list-[2,3]
+    size=480,546
+    pos=_scroll-2 -15,0
+_toggle-[1,2]
+    pos=100%-40$-60,100%-189
+@endif

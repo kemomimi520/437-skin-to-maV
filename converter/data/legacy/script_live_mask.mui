@@ -1,0 +1,22 @@
+_press-[1-9]
+    anchor=4
+    tex=ll-hitpointpressed-0.png
+    size=178,178
+_press-1
+    pos=50%-450,540
+_press-2
+    pos=50%-415.7,367.8
+_press-3
+    pos=50%-318.2,221.8
+_press-4
+    pos=50%-172.2,124.3
+_press-5
+    pos=50%,90
+_press-6
+    pos=50%+172.2,124.3
+_press-7
+    pos=50%+318.2,221.8
+_press-8
+    pos=50%+415.7,367.8
+_press-9
+    pos=50%+450,540

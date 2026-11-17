@@ -1,0 +1,153 @@
+@unit 1080
+@include script_def.mui
+
+_head-t
+    type=1
+    lang=920
+    fsize=50
+    anchor=4
+    pos=50%,100%-{p_title_y}
+    zindex=2
+_list
+    type=101
+    size={p_list_w},{p_list_h}
+    anchor=4
+    pos=50%,50%+20
+    tex=g-empty.png
+    size3=0,100
+_scroll
+    tex=g-scroll.png
+    size=2,{p_list_h}
+    anchor=5
+    pos=50%+428,50%+20
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
+_button
+    type=4
+    tex=g-dialogbtn.png
+    tex2=g-dialogbtn2.png
+    part=7,46
+    size=220,68
+    anchor=1
+    pos=50%,{p_btn_y}
+    etag=119
+    tag=1
+    hover=g-dialogbtn2.png
+    press=g-dialogbtn2.png
+    leave=g-dialogbtn.png
+    release=g-dialogbtn.png
+_buttonstr
+    type=1
+    lang=113
+    fsize=32
+    anchor=4
+    pos=110,34
+    parent=_button
++item
+_item
+    size={p_list_w},{p_item_h}+{p_item_p}
+_itembg
+    type=4
+    tex=ui-quest-bg.png
+    part=20,80
+    size={p_list_w},{p_item_h}
+    anchor=6
+    pos=0,{p_item_p}
+    parent=_item
+_item-status
+    tex=icon-quest-start.png
+    size=0,{p_item_p}
+    anchor=4
+    parent=_item
+    pos=63,64+31
+    zindex=2
+    tag=1
+_item-title
+    type=1
+    fsize=24
+    anchor=6
+    parent=_item
+    pos=123,80+31
+    zindex=2
+    tag=2
+_item-desc
+    type=1
+    fsize=24
+    size2=600,0
+    anchor=6
+    parent=_item
+    pos=_item-title 0,-26
+    zindex=2
+    tag=3
+_item-exp
+    type=1
+    fsize=24
+    color=#F5AC47
+    anchor=6
+    parent=_item
+    pos=_item-title 0,-70
+    zindex=2
+    tag=4
+_item-progress
+    type=106
+    tex=ui-quest-bg3.png
+    size=290,23
+    anchor=6
+    pos=395,26+31
+    parent=_item
+    zindex=3
+    tag=6
+_item-progressbg
+    type=4
+    tex=ui-quest-bg2.png
+    part=12,66
+    size=290,23
+    anchor=6
+    pos=_item-progress 0,0
+    parent=_item
+    zindex=4
+_item-type
+    tex=icon-quest-week.png
+    size=0,41
+    anchor=4
+    parent=_item
+    pos=100%-61,66.5+31
+    zindex=2
+    tag=5
+
+
+@if phone
+_button
+    size=363,104
+    pos=50%,{p_btn_y}
+_buttonstr
+    fsize=45
+    pos=181.5,52
+_scroll
+    pos=50%+695,50%+20
+_item-status
+    pos=63,110+31
+_item-title
+    fsize=45
+    pos=123,130+31
+_item-desc
+    fsize=30
+    pos=_item-title 0,-20
+_item-exp
+    fsize=30
+    pos=_item-title 0,-100
+_item-progress
+    size=435,34
+    pos=750,50+31
+_item-progressbg
+    size=_item-progress 0,0
+    pos=_item-progress 0,0
+_item-type
+    size=0,58
+    parent=_item
+    pos=100%-70,97+{p_item_p}
+@endif

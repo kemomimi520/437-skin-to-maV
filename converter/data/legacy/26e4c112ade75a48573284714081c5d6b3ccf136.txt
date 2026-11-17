@@ -1,0 +1,44 @@
+_bg
+    type=2
+    color=#000000
+    opacity=80
+    anchor=4
+    pos=50%,50%
+    size=100%,100%
+    etag=103
+    tag=7
+
+_icon-[1-4]
+    tex=result-good0.png
+    size=100,0
+    anchor=4
+    pos=50%-225$150,50%+20
+    etag=103
+    tag=1$1
+    hover=:name=size,from=fill,to=(120,120),time=200,trans=easeout
+    leave=:name=size,from=fill,to=(100,100),time=200,trans=eastout
+_icon-1
+    tip=712/16,200
+_icon-2
+    tex=result-bad0.png
+    tip=713/16,200
+_icon-3
+    tex=result-gold.png
+    tip=701/16,200
+_icon-4
+    tex=result-msg.png
+    tip=714/16,200
+_text-[1-4]
+    type=1
+    fsize=18
+    anchor=4
+    align=1
+    pos=50%-225$150,50%-70
+_text-1
+    lang=709
+_text-2
+    lang=710
+_text-3
+    lang=700
+_text-4
+    lang=711

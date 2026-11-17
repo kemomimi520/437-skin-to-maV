@@ -1,0 +1,385 @@
+@include script_sub_head.mui
+#@include script_temp.mui
+
+@unit 1080
+
+_head-t
+    lang=922
+_head-back
+    show=0
+_head-btn-[2-4,9]
+    tex=icon-search.png
+    size=0,69
+    anchor=4
+    etag=118
+    parent=_head
+    pos=100%-50-{ipx}$-78-{icon_p},50%+8
+    zindex=2
+_head-btn-2
+    tag=5
+_head-btn-3
+    tag=4
+    tex=icon-sort.png
+_head-btn-9
+    tag=20
+    tex=icon-collection.png
+_head-btn-4
+    tag=3
+    tex=icon-mode.png
+_head-btn-[5,6,7]
+    tex=icon-login.png
+    size=0,69
+    anchor=4
+    etag=118
+    zindex=12
+    pos=353$78+{icon_p},100%-59.5
+_head-btn-5
+    tag=1
+    action=:name=fade,time=200,f=fill,tr=easeout
+    action2=:name=fade,time=200,f=fill,to=255,tr=easein
+_head-btn-6
+    tag=2
+    tex=icon-setting.png
+    action=:name=mx,time=200,f=fill,to=353,tr=easeout
+    action2=:name=mx,time=200,f=fill,to=431+{icon_p},tr=easein
+_head-btn-7
+    tag=17
+    tex=icon-create.png
+    action=:name=mx,time=200,f=fill,to=431+{icon_p},tr=easeout
+    action2=:name=mx,time=200,f=fill,to=509+{icon_p}+{icon_p},tr=easein
+_head-btn-8
+    tex=icon-back.png
+    size=0,69
+    anchor=4
+    etag=118
+    parent=_head
+    pos=353,50%+8
+    zindex=2
+    tag=19
+    show=0
+_avatarbg
+    tex=g-avatarbg.png
+    size=334,0
+    anchor=4
+    pos=134,100%-134
+    zindex=20
+_avatar
+    type=102
+    type2=1
+    size2=212,212
+    tex=g-avatar-l.png
+    anchor=4
+    pos=_avatarbg 0,0
+    zindex=21
+    etag=118
+    tag=15
+_left-btn-[1-4]
+    tex=ui-song-bg0.png
+    tex2=ui-song-bg1.png
+    size=0,72
+    anchor=6
+    pos=29,310$102
+    etag=118
+    tag=9$-1
+    hover=ui-song-bg1.png
+    leave=ui-song-bg0.png
+    zindex=5
+_left-icon-[1-4]
+    tex=ui-song-more.png
+    size=41,0
+    anchor=4
+    pos=36,36
+_left-icon-1
+    tex=ui-song-news.png
+    parent=_left-btn-1
+_left-icon-2
+    tex=ui-song-more.png
+    parent=_left-btn-2
+_left-icon-3
+    tex=ui-song-store.png
+    parent=_left-btn-3
+_left-icon-4
+    tex=ui-song-user.png
+    parent=_left-btn-4
+#装饰线
+_line-1
+    tex=ui-song-bg2.png
+    size=0,93
+    anchor=6
+    pos=310+{ipx},407
+_line-2
+    tex=ui-song-bg3.png
+    size=0,93
+    anchor=6
+    pos=512+{ipx},108
+_line-3
+    tex=ui-song-bg4.png
+    size=588,0
+    anchor=4
+    pos=448+{ipx},578
+_line-5
+    tex=ui-song-line3.png
+    size=0,125
+    anchor=2
+    pos=398+{ipx},289
+_line-6
+    tex=ui-song-line1.png
+    size=0,92
+    pos=578+{ipx},331
+    anchor=0
+_line-7
+    tex=ui-song-line2.png
+    size=0,136
+    pos=645+{ipx},796
+    anchor=6
+_code-[1-3]
+    type=3
+    frame=code/0-28
+    interval=100
+    size=0,30
+    flip=2
+    anchor=6
+_code-1
+    pos=193+{ipx},130
+_code-2
+    flip=2
+    interval=150
+    pos=805+{ipx},243
+_code-3
+    flip=2
+    interval=180
+    pos=944+{ipx},891
+_tachie
+    anchor=4
+    size=0,960
+    pos=470+{ipx},540
+    zindex=2
+    etag=118
+    tag=13
+_line-4
+    tex=ui-song-player.png
+    size=0,159
+    anchor=8
+    pos=100%-60,70
+_player-[1-3]
+    tex=ui-song-next.png
+    size=0,51
+    anchor=5
+    pos=100%-241$-98,70
+    zindex=2
+    etag=118
+    tag=12$-1
+_player-2
+    tex=ui-song-pause.png
+_player-3
+    tex=ui-song-prev.png
+_scroll
+    tex=g-scroll.png
+    size=2,725
+    anchor=7
+    pos=100%-33,180
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
+list_
+    size=805,725
+    pos=100%-60,180
+    anchor=8
+    zindex=2
+_item2-circle
+    tex=ui-song-bg8.png
+    size=0,389
+    anchor=4
+    pos=100%-80-940+118,422+97.5
++item2
+_item2
+    size=940,195
+    anchor=8
+    pos=805,242
+_item2-bg
+    type=4
+    tex=g-diffbg.png
+    part=20,150
+    size=900,195
+    anchor=8
+    pos=940,0
+    parent=_item2
+_item2-shadow
+    tex=g-coverbg.png
+    parent=_item2
+    pos=118,50%
+    size=270,270
+    anchor=4
+    zindex=2
+_item2-cover
+    type=107
+    size2=210,210
+    tex=g-cover.png
+    anchor=4
+    parent=_item2
+    pos=_item2-shadow 0,0
+    tag=1
+    zindex=3
+_item2-title
+    type=1
+    fsize={f1}
+    size2=660,0
+    anchor=6
+    pos=247,129
+    parent=_item2
+    zindex=5
+    tag=2
+_item2-artist
+    type=1
+    fsize={f3}
+    size2=660,0
+    anchor=6
+    pos=_item2-title 0,-30
+    parent=_item2
+    zindex=5
+    tag=3
+_item2-meta
+    type=1
+    fsize={f3}
+    anchor=6
+    pos=247,20
+    parent=_item2
+    zindex=5
+    tag=4
+_item2-mode
+    size=36,36
+    anchor=5
+    parent=_item2
+    pos=100%-25,40
+    tag=5
+    zindex=2
++item1
+_item1
+    size=805,68+23
+_item1-bg
+    type=4
+    tex=ui-song-bg5.png
+    part=20,130
+    size=729,68
+    anchor=8
+    pos=805,10
+    parent=_item1
+    tag=4
+_item1-title
+    type=1
+    fsize={f3}
+    size2=680,0
+    anchor=3
+    parent=_item1
+    pos=115,43+10
+    zindex=3
+    tag=1
+_item1-mode
+    size=36,36
+    anchor=5
+    parent=_item1
+    pos=100%-25,34+10
+    zindex=2
+    tag=2
+_item1-new
+    tex=ui-song-new.png
+    size=0,30
+    anchor=5
+    parent=_item1
+    pos=109,48+10
+    zindex=2
+    tag=3
++song
+_song
+    size=235,228
+    size2=235,4px
+    anchor=6
+    etag=118
+    tag=18
+_songcover
+    type=107
+    size2=207,207
+    tex=g-cover.png
+    anchor=4
+    parent=_song
+    pos=117.5,124.5
+    zindex=2
+    tag=1
+_songbg
+    tex=g-coverbg.png
+    size=266,0
+    anchor=4
+    parent=_song
+    pos=_songcover 0,0
+    zindex=1
+_songmask
+    type=2
+    color=#000000
+    opacity=30
+    size=207,207
+    pos=_songcover 0,0
+    anchor=4
+    parent=_song
+    zindex=3
+    tag=2
+_songmask2
+    type=2
+    color=#000000
+    opacity=30
+    size=207,46
+    pos=117.5,21
+    anchor=7
+    parent=_song
+    zindex=4
+_songtitle
+    type=1
+    fsize={f3}
+    size2=200,0
+    anchor=3
+    parent=_song
+    pos=20,50
+    zindex=5
+    tag=3
+_songmod
+    size=190,30
+    anchor=6
+    parent=_song
+    pos=21,186
+    zindex=4
+    tag=4
+
+@if phone
+_left-btn-[1-4]
+    size=0,102
+    pos=29+{ipx},210$130
+_left-icon-[1-4]
+    size=58,0
+    pos=51,51
+_item1-mode
+    size=42,42
+_item2-mode
+    size=42,42
+_head-btn-2
+    tex=icon-search0.png
+_head-btn-3
+    tex=icon-sort0.png
+_head-btn-4
+    tex=icon-mode0.png
+_head-btn-5
+    tex=icon-login0.png
+_head-btn-6
+    tex=icon-setting0.png
+_head-btn-7
+    tex=icon-create0.png
+_head-btn-8
+    tex=icon-back0.png
+_head-btn-9
+    tex=icon-collection0.png
+_song
+    size2=255,4px
+@endif
+
+@includex <1.44 script_song@1.4.mui

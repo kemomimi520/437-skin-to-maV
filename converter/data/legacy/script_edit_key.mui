@@ -1,0 +1,149 @@
+@include script_edit_config.mui
+@include script_edit_pc.mui
+
+_right-icon3-2
+    tex=ui-edit-icon12.png
+    tag=1
+_right-icon3-3
+    tex=ui-edit-icon13.png
+    tag=2
+_right-icon3-4
+    tex=ui-edit-icon21.png
+    tag=83
+_right-icon3-5
+    tex=ui-edit-icon20.png
+    tag=85
+_right-icon3-[2-5]
+    show=1
+_right-tip3-2
+    text=Note
+_right-tip3-3
+    text=Hold
+_right-tip3-4
+    text=Remove
+_right-tip3-5
+    text=More
+_right-tip3-[2-5]
+    show=1
+
+_edit
+    size=100%,100%
+    anchor=6
+    pos=0,0
+    zindex=1
+    etag=105
+_grids
+    size=100%,100%
+    anchor=6
+    pos=0,0
+_grid-[1-10]
+    anchor=7
+    size=72,100%
+    pos=310$60,0
+    parent=_grids
+_gridbg-[1-10]
+    tex=ui-edit-bg4.png
+    size=72,100%
+    anchor=6
+    pos=0,0
+_gridbg-1
+    parent=_grid-1
+_gridbg-2
+    parent=_grid-2
+_gridbg-3
+    parent=_grid-3
+_gridbg-4
+    parent=_grid-4
+_gridbg-5
+    parent=_grid-5
+_gridbg-6
+    parent=_grid-6
+_gridbg-7
+    parent=_grid-7
+_gridbg-8
+    parent=_grid-8
+_gridbg-9
+    parent=_grid-9
+_gridbg-10
+    parent=_grid-10
+_judge-[1-10]
+    tex=ui-edit-keybar.png
+    size=56,9
+    anchor=7
+    pos=36,60
+_judge-1
+    parent=_grid-1
+_judge-2
+    parent=_grid-2
+_judge-3
+    parent=_grid-3
+_judge-4
+    parent=_grid-4
+_judge-5
+    parent=_grid-5
+_judge-6
+    parent=_grid-6
+_judge-7
+    parent=_grid-7
+_judge-8
+    parent=_grid-8
+_judge-9
+    parent=_grid-9
+_judge-10
+    parent=_grid-10
+
+_notehold
+    anchor=7
+    tex=ui-edit-keynote2.png
+    size=60,0
+    size2=5px,20%
+    pos=_grid-1 0,60
+    part=14px,20px
+    zindex=2
+    parent=_edit
+@if phone
+    size2=5px,15%
+@endif
+
+_infol-100
+    type=1
+    fsize={panelF}
+    lang=3030
+_infoe-100
+    type=4
+    tex=g-input.png
+    part=10,50
+    size={listW},40
+    etag=104
+    tag=55
+_infot-100
+    type=1
+    fsize=20
+    anchor=3
+    pos=10,20
+    etag=104
+    tag=55
+    parent=_infoe-100
+
+@if phone
+
+_grid-[1-10]
+    size=162,100%
+    pos=330$148,0
+    parent=_grids
+_gridbg-[1-10]
+    size=162,100%
+_judge-[1-10]
+    size=125,15
+    pos=81,60
+_notehold
+    pos=_grid-1 0,60
+    size=140,0
+    size2=5px,50%
+_infoe-100
+    size={listW},70
+_infot-100
+    fsize=36
+    size=520,50
+    pos=20,36
+@endif

@@ -1,0 +1,384 @@
+@include script_sub_head.mui
+@unit 1080
+
+@define right_x 59
+@define list_w 747
+@define right_w 950
+@if <1.65
+@define right_x 45
+@define right_w 860
+@endif
+@if <1.44
+@define right_x 30
+@define list_w 637
+@define right_w 720
+@endif
+
+_head-t
+    lang=914
+_head-back
+    etag=121
+    tag=1
+_head-btn-[2,3]
+    tex=icon-sort.png
+    size=0,69
+    anchor=5
+    etag=121
+    parent=_head
+    pos=100%-28-{ipx}$-71.5-{icon_p},50%+8
+    zindex=2
+_head-btn-2
+    tag=2
+_head-btn-3
+    tex=icon-mode.png
+    tag=3
+#left
+_title
+    type=1
+    fsize={f2}
+    anchor=3
+    pos={right_x},100%-187
+    lang=810
+_scroll
+    tex=g-scroll.png
+    size=2,780
+    anchor=7
+    pos={right_x}+{list_w}+10,74
+_scrollbar
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll
+    pos=2,0
+_list
+    type=101
+    size={list_w},780
+    pos={right_x},74
+    anchor=6
+    tex=g-empty.png
+    size3=0,160
++item1
+_item1
+    size={list_w},116+36
+_item1-bg
+    type=4
+    tex=ui-lobby-bg2.png
+    part=20,100
+    size=737,116
+    anchor=6
+    pos=10,18
+    parent=_item1
+_item1-coverbg
+    tex=g-coverbg.png
+    size=156,0
+    anchor=3
+    parent=_item1
+    pos=-10,50%
+    zindex=2
+_item1-cover
+    type=102
+    size2=124,124
+    tex=g-cover.png
+    anchor=3
+    parent=_item1
+    pos=6,50%
+    zindex=3
+    tag=1
+_item1-title
+    type=1
+    fsize={f2}
+    size2=400,0
+    anchor=6
+    parent=_item1
+    pos=140,74
+    tag=2
+_item1-sub
+    type=1
+    fsize={f3}
+    anchor=6
+    parent=_item1
+    pos=_item1-title 0,-40
+    tag=3
+_item1-mod
+    tex=mode0.png
+    size=0,30
+    anchor=5
+    parent=_item1
+    pos=100%-105,50%
+    tag=4
+_item1-status
+    tex=icon-waiting.png
+    size=0,41
+    anchor=4
+    parent=_item1
+    pos=100%-68,50%
+    tag=5
++
+#right
+_rightbg
+    type=5
+    tex=g-rightbg.png
+    rect=20px,144px,40px,80px
+    size={right_w},832
+    size2=0,1080px
+    anchor=8
+    pos=100%-{right_x},74
+_layer-add
+    size=_rightbg 0,0
+    pos=_rightbg 0,0
+    anchor=8
+    zindex=2
+    show=1
+_add-inputbg-[1,2]
+    type=4
+    tex=g-input.png
+    part=10,50
+    size=490,49
+    anchor=6
+    parent=_layer-add
+    pos={right_x},699$-222
+_add-inputbg-2
+    etag=121
+    tag=6
+    show=0
+_add-input-1
+    type=105
+    fsize={f2}
+    size=486,45
+    anchor=6
+    tex=g-inputbar.png
+    size2=0,40
+    parent=_layer-add
+    pos={right_x},701
+    etag=121
+    tag=5
+_private
+    tex=g-opt.png
+    size=0,49
+    anchor=6
+    parent=_layer-add
+    pos={right_x},550
+    etag=121
+    tag=10
+_add-label-[1,2]
+    type=1
+    fsize={f3}
+    anchor=6
+    parent=_layer-add
+    pos={right_x},754
+_add-label-1
+    lang=811
+_add-label-2
+    lang=843
+    pos={right_x}+60,556
+    etag=121
+    tag=10
+_add-btn-[1,2]
+    type=4
+    tex=g-dialogbtn.png
+    tex2=g-dialogbtn2.png
+    part=7,46
+    size=263,68
+    anchor=6
+    parent=_layer-add
+    pos={right_x}$292,41
+    hover=g-dialogbtn2.png
+    leave=g-dialogbtn.png
+    etag=121
+    tag=7$1
+_add-btn-2
+    show=0
+_add-btntext-[1,2]
+    type=1
+    fsize={f2}
+    anchor=4
+    pos=131.5,34
+_add-btntext-1
+    parent=_add-btn-1
+    lang=809
+_add-btntext-2
+    parent=_add-btn-2
+    lang=1021
+#
+_layer-room
+    size=_rightbg 0,0
+    pos=_rightbg 0,0
+    anchor=8
+    zindex=2
+    show=0
+_room-title
+    type=1
+    fsize={f2}
+    size2=330,0
+    anchor=6
+    pos={right_x},754
+    parent=_layer-room
+_room-status-[1,2]
+    type=1
+    fsize={f3}
+    color=#999999
+    text=WAITING
+    anchor=6
+    parent=_layer-room
+    pos={right_x},685$-33
+_room-status-[3,4]
+    type=1
+    fsize={f3}
+    anchor=6
+    parent=_layer-room
+    pos={right_x},582
+_room-status-3
+    text=HOST
+_room-status-4
+    text=PLAYERS
+    pos=416,582
+_room-host
+    type=102
+    size2=136,136
+    type2=1
+    tex=g-avatar-l.png
+    anchor=3
+    pos={{right_x}+2,497
+    parent=_layer-room
+_room-border
+    tex=ui-lobby-bg3.png
+    size=138,0
+    anchor=3
+    pos=_room-host -1,0
+    parent=_layer-room
+    zindex=3
+_room-host-name
+    type=1
+    fsize={f2}
+    size2=300,0
+    anchor=0
+    pos={right_x},430
+    parent=_layer-room
+_room-host-lv
+    type=1
+    fsize={f2}
+    anchor=0
+    color=#999999
+    pos={right_x},385
+    parent=_layer-room
+_room-btn-[1,2]
+    type=4
+    tex=g-dialogbtn.png
+    tex2=g-dialogbtn2.png
+    part=7,46
+    size=263,68
+    anchor=6
+    parent=_layer-room
+    pos={right_x},141$-100
+    hover=g-dialogbtn2.png
+    leave=g-dialogbtn.png
+    etag=121
+_room-btn-1
+    tag=9
+_room-btn-2
+    tag=8
+_room-btntxt-[1,2]
+    type=1
+    fsize={f2}
+    anchor=4
+    pos=131.5,34
+_room-btntxt-1
+    lang=838
+    parent=_room-btn-1
+_room-btntxt-2
+    lang=1021
+    parent=_room-btn-2
+_room-lock
+    tex=ui-lobby-lock.png
+    size=0,40
+    parent=_room-btn-1
+    anchor=3
+    pos=4,34
+    show=0
+_room-song-cover
+    type=102
+    size2=140,140
+    tex=g-cover.png
+    anchor=0
+    pos=416,780
+    parent=_layer-room
+_room-songstr-[1-3]
+    type=1
+    fsize={f3}
+    anchor=0
+    size2=300,0
+    pos=_room-song-cover 146,0
+    parent=_layer-room
+_room-songstr-1
+    fsize={f2}
+_room-songstr-2
+    pos=_room-songstr-1 0,-36
+_room-songstr-3
+    pos=_room-songstr-1 0,-91
+_playerlist
+    type=101
+    size=470,524
+    anchor=6
+    pos=416,42
+    parent=_layer-room
+_scroll-2
+    tex=g-scroll.png
+    size=2,524
+    anchor=7
+    pos=915,42
+    parent=_layer-room
+_scrollbar-2
+    tex=g-scrollbar.png
+    size=7,138
+    anchor=8
+    parent=_scroll-2
+    pos=2,0
++item2
+_item2
+    size=470,70
+_item2-avatar
+    type=102
+    type2=1
+    tex=g-avatar.png
+    size2=51,51
+    anchor=4
+    pos=25,35
+    parent=_item2
+    tag=1
+_item2-name
+    type=1
+    fsize={f3}
+    anchor=3
+    size2=330,0
+    pos=72,45
+    parent=_item2
+    tag=2
+
+@if phone
+_head-btn-2
+    tex=icon-sort0.png
+_head-btn-3
+    tex=icon-mode0.png
+_item1-sub
+    pos=_item1-title 0,-44
+_item1-mod
+    size=0,45
+_add-inputbg-[1,2]
+    size=590,70
+    pos={right_x},680$-222
+_add-input-1
+    size=560,45
+    pos={right_x}+5,695
+_room-title
+    pos={right_x},750
+_room-host-lv
+    pos={right_x},376
+_room-songstr-1
+    pos=_room-song-cover 157,15
+_room-songstr-2
+    pos=_room-songstr-1 0,-50
+_room-songstr-3
+    pos=_room-songstr-1 0,-95
+@endif
+
+@includex <1.44 script_lobby@1.4.mui

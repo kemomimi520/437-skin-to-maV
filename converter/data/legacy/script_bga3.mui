@@ -1,0 +1,45 @@
+@unit 1080
+
+:bg-0
+    name=rotate,from=0,to=360,time=2571.43,repeat=-1,trans=(0.42,0,0.58,1.0)
+:bg-1
+    name=rotate,from=0,to=360,time=3600,repeat=-1,trans=(0.42,0,0.58,1.0)
+:bg-2
+    name=rotate,from=0,to=-360,time=7200,repeat=-1,trans=(0.42,0,0.58,1.0)
+:bg-3
+    name=rotate,from=0,to=-480,time=3000,repeat=(-1,3000),trans=(0.42,0,0.58,1.0)
+    name=rotate,from=-480,to=-1080,time=(3000,6000),repeat=(-1,3000),trans=(0.42,0,0.58,1.0)
+    name=s,from=0.8,to=1.15,time=3000,repeat=(-1,3000),trans=(0.42,0,0.58,1.0)
+    name=s,from=1.15,to=0.8,time=(3000,6000),repeat=(-1,3000),trans=(0.42,0,0.58,1.0)
+:bg-4
+    name=rotate,from=0,to=360,time=72000,repeat=-1
+_fixed
+    anchor=4
+    tex=bga2-fixed.png
+    size=361,0
+    pos=808,544
+    zindex=1
+_bg-[0-4]
+    anchor=4
+    size=361,0
+    pos=_fixed 0,0
+    zindex=2
+_bg-0
+    tex=bga2-0.png
+    size=88,0
+    motion=bg-0
+_bg-1
+    tex=bga2-1.png
+    motion=bg-1
+    tag=1
+_bg-2
+    tex=bga2-2.png
+    motion=bg-2
+_bg-3
+    tex=bga2-3.png
+    motion=bg-3
+_bg-4
+    tex=bga2-4.png
+    motion=bg-4
+
+@includex <1.44 script_bga3@1.4.mui
