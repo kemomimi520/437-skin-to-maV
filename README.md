@@ -1,4 +1,4 @@
-# Ma Skin Bridge (`437-to-maV`)
+# 437-skin-to-maV (`Ma Skin Bridge`)
 
 Malody 4.3.7 `.msz` → Malody V 原生 Key (`.msp`, `free=false`) 皮肤转换工具。  
 Convert legacy **Malody 4.3.7** Key-mode skins (`.msz`) into **Malody V** native Key skin packages (`.msp`, `free=false`).

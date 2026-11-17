@@ -13,7 +13,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_STAGE = ROOT / 'output/.public-export-repo'
 PUBLIC_REMOTE = 'public'
-PUBLIC_REPO_SLUG = 'kemomimi520/437-to-maV'
+PUBLIC_REPO_SLUG = 'kemomimi520/437-skin-to-maV'
 
 ROOT_FILES = (
     '.gitattributes',
